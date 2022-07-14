@@ -1,0 +1,9 @@
+sub_unit_categories = {
+	
+	#NAVAL UNITS
+	category_all_cruiser_carrier
+	category_all_battle_carrier
+	
+	category_all_submarine_carrier
+	category_all_cruiser_submarine
+}

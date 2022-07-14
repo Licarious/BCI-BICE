@@ -1,0 +1,35 @@
+equipment_modules = {
+	nrm_submarine_deckgun_8 = {
+		category = nrm_submarine_deckgun_8
+		sfx = sfx_ui_sd_module_turret
+		gui_category = nrm_submarine_deckgun
+		
+		add_equipment_type = capital_ship
+		
+		manpower = 16
+		add_stats = {
+			build_cost_ic = 102
+			max_strength = 5.1
+			hg_attack = 2.6
+			supply_consumption = 0.002
+			sub_visibility = 1.02
+			
+		}
+		add_average_stats = {
+			hg_armor_piercing = 14
+			
+		}
+		multiply_stats = {
+			build_cost_ic = 0.064
+			reliability = -0.016
+			naval_speed = -0.08192
+			fuel_consumption = 0.064
+			
+		}
+		build_cost_resources = {
+			
+		}
+		critical_parts = { damaged_heavy_guns }
+		dismantle_cost_ic = 100
+	}
+	

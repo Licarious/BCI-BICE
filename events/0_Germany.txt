@@ -1,0 +1,116 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = germany
+
+	country_event = {#258
+		id = germany.258
+		title = germany.258.t
+		desc = germany.258.desc.a
+		picture = GFX_report_event_scharnhorst_28
+
+		fire_only_once = yes
+		
+		mean_time_to_happen = {
+			days = 2
+		}
+		
+		option = {
+			name = germany.258.a
+			ai_chance = { factor = 100 }
+		
+			hidden_effect = {
+				if = {
+					limit = {
+						not = { has_dlc = "Man the Guns" }
+					}
+					load_oob = GER_Scharnhorst_Gneisenau_28
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					create_equipment_variant = {
+						name = "Scharnhorst Class"
+						type = nrm_ship_hull_capital_3
+						name_group = GER_BB_HISTORICAL
+						parent_version = 0
+						role_icon_index = 98
+						modules = {
+							fixed_ship_hullform_slot = nrm_ship_hullform_capital_3
+							fixed_ship_engine_slot = nrm_capital_engine_S2_160
+							fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+							fixed_ship_armor_slot = nrm_capital_armour_14_1
+							fixed_ship_subdivision_slot = nrm_subdivision_3
+							fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+							fixed_ship_range_slot = nrm_range_capital_3
+							fixed_ship_radar_slot = empty
+							fixed_ship_fire_control_system_slot = nrm_fire_control_4
+							fixed_ship_fire_control_system_aa_slot = empty
+							fixed_ship_battery_slot = nrm_capital_battery_11_3_3x2
+							fixed_ship_battery_rear_slot = nrm_capital_battery_11_3_3x1
+							fixed_ship_secondary_slot = nrm_capital_secondary_SB_6_2_x12
+							fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_2_x16
+							custom_slot_1 = empty
+							custom_slot_2 = nrm_support_capital_HAA_2
+							custom_slot_3 = nrm_support_capital_FP_1
+							custom_slot_4 = nrm_support_capital_HAA_2
+							custom_slot_5 = nrm_support_capital_AA_2
+							custom_slot_6 = empty
+						}
+					}
+					load_oob = GER_Scharnhorst_Gneisenau_28_NRM
+				}
+			}
+		}
+		option = {
+			name = germany.258.b
+			ai_chance = { factor = 0 }
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						not = { has_dlc = "Man the Guns" }
+					}
+					load_oob = GER_Scharnhorst_Gneisenau_38
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					create_equipment_variant = {
+						name = "Scharnhorst Class"
+						type = nrm_ship_hull_capital_3
+						name_group = GER_BB_HISTORICAL
+						parent_version = 0
+						role_icon_index = 98
+						modules = {
+							fixed_ship_hullform_slot = nrm_ship_hullform_capital_3
+							fixed_ship_engine_slot = nrm_capital_engine_S2_160
+							fixed_ship_armor_layout_slot = nrm_armour_layout_BB_2
+							fixed_ship_armor_slot = nrm_capital_armour_14_1
+							fixed_ship_subdivision_slot = nrm_subdivision_3
+							fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+							fixed_ship_range_slot = nrm_range_capital_3
+							fixed_ship_radar_slot = empty
+							fixed_ship_fire_control_system_slot = nrm_fire_control_4
+							fixed_ship_fire_control_system_aa_slot = empty
+							fixed_ship_battery_slot = nrm_capital_battery_15_2_2x2
+							fixed_ship_battery_rear_slot = nrm_capital_battery_20_2_2x1
+							fixed_ship_secondary_slot = nrm_capital_secondary_SB_6_2_x12
+							fixed_ship_tertiary_slot = nrm_capital_tertiary_HA_4_2_x16
+							custom_slot_1 = empty
+							custom_slot_2 = nrm_support_capital_HAA_2
+							custom_slot_3 = nrm_support_capital_FP_1
+							custom_slot_4 = nrm_support_capital_HAA_2
+							custom_slot_5 = nrm_support_capital_AA_2
+							custom_slot_6 = empty
+						}
+					}
+					load_oob = GER_Scharnhorst_Gneisenau_38_NRM
+				}
+			}
+		}
+	}
+	

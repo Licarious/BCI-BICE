@@ -1,0 +1,50 @@
+sub_units = {
+	submarine_cruiser = {
+		sprite = submarine_cruiser
+		map_icon_category = ship
+		priority = 5
+		active = yes
+		type = { submarine capital_ship }
+		need = { nrm_ship_hull_submarine = 1 }
+		need_equipment_modules = {
+			any = {
+				nrm_submarine_deckgun_8 = 1
+				nrm_submarine_deckgun_8_x2 = 1
+				nrm_submarine_battery_8_1_x02 = 1
+				nrm_submarine_battery_8_2_x02 = 1
+				nrm_submarine_battery_8_3_x02 = 1
+				nrm_submarine_battery_8_4_x02 = 1
+				nrm_submarine_battery_12_1_x01 = 1
+				nrm_submarine_battery_12_2_x01 = 1
+				nrm_submarine_battery_12_3_x01 = 1
+				nrm_submarine_battery_13_1_x01 = 1
+				nrm_submarine_battery_13_2_x01 = 1
+				nrm_submarine_battery_13_3_x01 = 1
+				nrm_submarine_battery_14_1_x01 = 1
+				nrm_submarine_battery_14_2_x01 = 1
+				nrm_submarine_battery_14_3_x01 = 1
+				nrm_submarine_battery_15_1_x01 = 1
+				nrm_submarine_battery_15_2_x01 = 1
+				nrm_submarine_battery_15_3_x01 = 1
+				nrm_submarine_battery_16_1_x01 = 1
+				nrm_submarine_battery_16_2_x01 = 1
+				nrm_submarine_battery_16_3_x01 = 1
+			}
+		}
+		max_organisation = 20
+		
+		supply_consumption = 0.001
+		
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+		
+		categories = {
+			category_all_ships
+			category_all_subs
+			category_all_cruiser_submarine
+		}
+		
+	}
+}

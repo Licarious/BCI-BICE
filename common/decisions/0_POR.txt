@@ -1,0 +1,578 @@
+POR_arms_purchases = {
+
+	#Mission to track the progress of British LIGHT CRUISER construction
+	POR_british_light_cruiser_construction_progress = {
+		
+		icon = generic_naval
+
+		allowed = {
+			original_tag = POR
+		}
+
+		visible = {
+			has_country_flag = POR_purchase_british_light_cruiser_flag
+			has_dlc = "Man the Guns"
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 600
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = POR }
+				NOT = { country_exists = ENG }
+				ENG = {
+					OR = {
+						has_war_with = ROOT
+						has_civil_war = yes
+						has_capitulated = yes
+						NOT = { owns_state = 126 } #Owns London
+					}
+				}
+			}
+		}
+
+		#Fail
+		cancel_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -2
+				}
+				remove_opinion_modifier = {
+					target = POR
+					modifier = POR_bought_ships
+				}
+			}
+			remove_opinion_modifier = {
+				target = ENG
+				modifier = POR_sold_ships
+			}
+			remove_opinion_modifier = {
+				target = ENG
+				modifier = POR_ships_trade
+			}
+			clr_country_flag = POR_purchase_british_light_cruiser_flag
+			clr_country_flag = POR_ships_purchase_in_progress_flag
+		}
+
+		#Success
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				if = { 
+					limit = {
+						ENG = { has_tech = advanced_ship_hull_cruiser }
+					}
+					hidden_effect = { 
+						add_manpower = 1400 
+						ENG = {
+							create_equipment_variant = {
+								name = "Atlântico Class"	
+								type = nrm_ship_hull_cruiser_4
+								name_group = POR_CL_HISTORICAL
+								parent_version = 0
+								role_icon_index = 2
+								modules = {
+									fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_4
+									fixed_ship_engine_slot = nrm_cruiser_engine_S2_075
+									fixed_ship_armor_layout_slot = nrm_armour_layout_2
+									fixed_ship_armor_slot = nrm_cruiser_armour_03_2
+									fixed_ship_subdivision_slot = nrm_subdivision_3
+									fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+									fixed_ship_range_slot = nrm_range_cruiser_2
+									fixed_ship_radar_slot = empty
+									fixed_ship_fire_control_system_slot = nrm_fire_control_4
+									fixed_ship_fire_control_system_aa_slot = empty
+									fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x06
+									fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x03
+									fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_2_x12
+									custom_slot_1 = empty
+									custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+									custom_slot_3 = nrm_support_cruiser_FP_1
+									custom_slot_4 = nrm_support_cruiser_AA_2
+									custom_slot_5 = empty
+									custom_slot_6 = nrm_support_cruiser_SNR_2
+								}
+							}
+						}
+					}
+					POR = {
+						create_equipment_variant = {
+							name = "Atlântico Class"	
+							type = nrm_ship_hull_cruiser_4
+							name_group = POR_CL_HISTORICAL
+							parent_version = 0
+							role_icon_index = 2
+							modules = {
+								fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_4
+								fixed_ship_engine_slot = nrm_cruiser_engine_S2_075
+								fixed_ship_armor_layout_slot = nrm_armour_layout_2
+								fixed_ship_armor_slot = nrm_cruiser_armour_03_2
+								fixed_ship_subdivision_slot = nrm_subdivision_3
+								fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+								fixed_ship_range_slot = nrm_range_cruiser_2
+								fixed_ship_radar_slot = empty
+								fixed_ship_fire_control_system_slot = nrm_fire_control_4
+								fixed_ship_fire_control_system_aa_slot = empty
+								fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x06
+								fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x03
+								fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_2_x12
+								custom_slot_1 = empty
+								custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+								custom_slot_3 = nrm_support_cruiser_FP_1
+								custom_slot_4 = nrm_support_cruiser_AA_2
+								custom_slot_5 = empty
+								custom_slot_6 = nrm_support_cruiser_SNR_2
+							}
+						}
+					}
+					create_ship = { type = nrm_ship_hull_cruiser_4 equipment_variant = "Atlântico Class" creator = ENG }
+				}
+				else_if = { 
+					limit = {
+						ENG = { has_tech = improved_ship_hull_cruiser }
+					}
+					hidden_effect = { 
+					add_manpower = 1200 
+						ENG = {
+							create_equipment_variant = {
+								name = "Atlântico Class"	
+								type = nrm_ship_hull_cruiser_3
+								name_group = POR_CL_HISTORICAL
+								parent_version = 0
+								role_icon_index = 2
+								modules = {
+									fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_3
+									fixed_ship_engine_slot = nrm_cruiser_engine_S2_065
+									fixed_ship_armor_layout_slot = nrm_armour_layout_2
+									fixed_ship_armor_slot = nrm_cruiser_armour_02h_2
+									fixed_ship_subdivision_slot = nrm_subdivision_3
+									fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+									fixed_ship_range_slot = nrm_range_cruiser_2
+									fixed_ship_radar_slot = empty
+									fixed_ship_fire_control_system_slot = nrm_fire_control_4
+									fixed_ship_fire_control_system_aa_slot = empty
+									fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x04
+									fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x04
+									fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_2_x08
+									custom_slot_1 = empty
+									custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+									custom_slot_3 = nrm_support_cruiser_FP_1
+									custom_slot_4 = nrm_support_cruiser_AA_2
+									custom_slot_5 = empty
+									custom_slot_6 = nrm_support_cruiser_SNR_2
+								}
+							}
+						}
+					}
+					POR = {
+						create_equipment_variant = {
+							name = "Atlântico Class"	
+							type = nrm_ship_hull_cruiser_3
+							name_group = POR_CL_HISTORICAL
+							parent_version = 0
+							role_icon_index = 2
+							modules = {
+								fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_3
+								fixed_ship_engine_slot = nrm_cruiser_engine_S2_065
+								fixed_ship_armor_layout_slot = nrm_armour_layout_2
+								fixed_ship_armor_slot = nrm_cruiser_armour_02h_2
+								fixed_ship_subdivision_slot = nrm_subdivision_3
+								fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+								fixed_ship_range_slot = nrm_range_cruiser_2
+								fixed_ship_radar_slot = empty
+								fixed_ship_fire_control_system_slot = nrm_fire_control_4
+								fixed_ship_fire_control_system_aa_slot = empty
+								fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x04
+								fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x04
+								fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_2_x08
+								custom_slot_1 = empty
+								custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+								custom_slot_3 = nrm_support_cruiser_FP_1
+								custom_slot_4 = nrm_support_cruiser_AA_2
+								custom_slot_5 = empty
+								custom_slot_6 = nrm_support_cruiser_SNR_2
+							}
+						}
+					}
+					create_ship = { type = nrm_ship_hull_cruiser_3 equipment_variant = "Atlântico Class" creator = ENG }
+				}
+				else = {
+					hidden_effect = { 
+						add_manpower = 800 
+						ENG = {
+							create_equipment_variant = {
+								name = "Atlântico Class"	
+								type = nrm_ship_hull_cruiser_2
+								name_group = POR_CL_HISTORICAL
+								parent_version = 0
+								role_icon_index = 2
+								modules = {
+									fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_2
+									fixed_ship_engine_slot = nrm_cruiser_engine_S2_060
+									fixed_ship_armor_layout_slot = nrm_armour_layout_2
+									fixed_ship_armor_slot = nrm_cruiser_armour_02h_2
+									fixed_ship_subdivision_slot = nrm_subdivision_3
+									fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+									fixed_ship_range_slot = nrm_range_cruiser_2
+									fixed_ship_radar_slot = empty
+									fixed_ship_fire_control_system_slot = nrm_fire_control_4
+									fixed_ship_fire_control_system_aa_slot = empty
+									fixed_ship_battery_slot = nrm_cruiser_battery_6_2_x04
+									fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_2_x04
+									fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_1_x08
+									custom_slot_1 = empty
+									custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+									custom_slot_3 = nrm_support_cruiser_FP_1
+									custom_slot_4 = nrm_support_cruiser_AA_2
+									custom_slot_5 = empty
+									custom_slot_6 = nrm_support_cruiser_SNR_2
+								}
+							}
+						}
+					}
+					POR = {
+						create_equipment_variant = {
+							name = "Atlântico Class"	
+							type = nrm_ship_hull_cruiser_2
+							name_group = POR_CL_HISTORICAL
+							parent_version = 0
+							role_icon_index = 2
+							modules = {
+								fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_2
+								fixed_ship_engine_slot = nrm_cruiser_engine_S2_060
+								fixed_ship_armor_layout_slot = nrm_armour_layout_2
+								fixed_ship_armor_slot = nrm_cruiser_armour_02h_2
+								fixed_ship_subdivision_slot = nrm_subdivision_3
+								fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+								fixed_ship_range_slot = nrm_range_cruiser_2
+								fixed_ship_radar_slot = empty
+								fixed_ship_fire_control_system_slot = nrm_fire_control_4
+								fixed_ship_fire_control_system_aa_slot = empty
+								fixed_ship_battery_slot = nrm_cruiser_battery_6_2_x04
+								fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_2_x04
+								fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_1_x08
+								custom_slot_1 = empty
+								custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+								custom_slot_3 = nrm_support_cruiser_FP_1
+								custom_slot_4 = nrm_support_cruiser_AA_2
+								custom_slot_5 = empty
+								custom_slot_6 = nrm_support_cruiser_SNR_2
+							}
+						}
+					}
+					create_ship = { type = nrm_ship_hull_cruiser_2 equipment_variant = "Atlântico Class" creator = ENG }
+				}
+			}
+
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -2
+				}
+			}
+			country_event = lar_portugal_purchase_ships.6
+			set_country_flag = POR_ships_purchased_flag
+			clr_country_flag = POR_purchase_british_light_cruiser_flag
+			clr_country_flag = POR_ships_purchase_in_progress_flag
+		}
+	}
+
+	#Mission to track the progress of Italian LIGHT CRUISER construction
+	POR_italian_light_cruiser_construction_progress = {
+		
+		icon = generic_naval
+
+		allowed = {
+			original_tag = POR
+		}
+
+		visible = {
+			has_country_flag = POR_purchase_italian_light_cruiser_flag
+			has_dlc = "Man the Guns"
+		}
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		days_remove = 600
+
+		cancel_trigger = {
+			OR = {
+				NOT = { country_exists = POR }
+				NOT = { country_exists = ITA }
+				ITA = {
+					OR = {
+						has_war_with = ROOT
+						has_civil_war = yes
+						has_capitulated = yes
+						NOT = { owns_state = 846 } #Owns Rome
+					}
+				}
+			}
+		}
+
+		#On Activation
+		complete_effect ={
+			ITA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+
+		#Fail
+		cancel_effect = {
+			ITA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -2
+				}
+				remove_opinion_modifier = {
+					target = POR
+					modifier = POR_bought_ships
+				}
+			}
+			remove_opinion_modifier = {
+				target = ITA
+				modifier = POR_sold_ships
+			}
+			remove_opinion_modifier = {
+				target = ITA
+				modifier = POR_ships_trade
+			}
+			clr_country_flag = POR_purchase_italian_light_cruiser_flag
+			clr_country_flag = POR_ships_purchase_in_progress_flag
+		}
+
+		#Success
+		remove_effect = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				if = { 
+					limit = {
+						ITA = { has_tech = advanced_ship_hull_cruiser }
+					}
+					hidden_effect = { 
+						add_manpower = 1400
+						ITA = {
+							create_equipment_variant = {
+								name = "Atlântico Class"	
+								type = nrm_ship_hull_cruiser_4
+								name_group = POR_CL_HISTORICAL
+								parent_version = 0
+								role_icon_index = 2
+								modules = {
+									fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_4
+									fixed_ship_engine_slot = nrm_cruiser_engine_S2_090
+									fixed_ship_armor_layout_slot = nrm_armour_layout_2
+									fixed_ship_armor_slot = nrm_cruiser_armour_03h_2
+									fixed_ship_subdivision_slot = nrm_subdivision_2
+									fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+									fixed_ship_range_slot = nrm_range_cruiser_1h
+									fixed_ship_radar_slot = empty
+									fixed_ship_fire_control_system_slot = nrm_fire_control_3
+									fixed_ship_fire_control_system_aa_slot = empty
+									fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x06
+									fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x04
+									fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_2_x08
+									custom_slot_1 = empty
+									custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+									custom_slot_3 = nrm_support_cruiser_FP_1
+									custom_slot_4 = nrm_support_cruiser_AA_1
+									custom_slot_5 = nrm_support_cruiser_AA_1
+									custom_slot_6 = empty
+								}
+							}
+						}
+					}
+					POR = {
+						create_equipment_variant = {
+							name = "Atlântico Class"	
+							type = nrm_ship_hull_cruiser_4
+							name_group = POR_CL_HISTORICAL
+							parent_version = 0
+							role_icon_index = 2
+							modules = {
+								fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_4
+								fixed_ship_engine_slot = nrm_cruiser_engine_S2_090
+								fixed_ship_armor_layout_slot = nrm_armour_layout_2
+								fixed_ship_armor_slot = nrm_cruiser_armour_03h_2
+								fixed_ship_subdivision_slot = nrm_subdivision_2
+								fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+								fixed_ship_range_slot = nrm_range_cruiser_1h
+								fixed_ship_radar_slot = empty
+								fixed_ship_fire_control_system_slot = nrm_fire_control_3
+								fixed_ship_fire_control_system_aa_slot = empty
+								fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x06
+								fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x04
+								fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_4_2_x08
+								custom_slot_1 = empty
+								custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+								custom_slot_3 = nrm_support_cruiser_FP_1
+								custom_slot_4 = nrm_support_cruiser_AA_1
+								custom_slot_5 = nrm_support_cruiser_AA_1
+								custom_slot_6 = empty
+							}
+						}
+					}
+					create_ship = { type = nrm_ship_hull_cruiser_4 equipment_variant = "Atlântico Class" creator = ITA }
+				}
+				else_if = { 
+					limit = {
+						ITA = { has_tech = improved_ship_hull_cruiser }
+					}
+					hidden_effect = { 
+						add_manpower = 1200
+						ITA = {
+							create_equipment_variant = {
+								name = "Atlântico Class"	
+								type = nrm_ship_hull_cruiser_3
+								name_group = POR_CL_HISTORICAL
+								parent_version = 0
+								role_icon_index = 2
+								modules = {
+									fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_3
+									fixed_ship_engine_slot = nrm_cruiser_engine_S2_080
+									fixed_ship_armor_layout_slot = nrm_armour_layout_2
+									fixed_ship_armor_slot = nrm_cruiser_armour_03_2
+									fixed_ship_subdivision_slot = nrm_subdivision_2
+									fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+									fixed_ship_range_slot = nrm_range_cruiser_1h
+									fixed_ship_radar_slot = empty
+									fixed_ship_fire_control_system_slot = nrm_fire_control_3
+									fixed_ship_fire_control_system_aa_slot = empty
+									fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x06
+									fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x04
+									fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_3_2_x08
+									custom_slot_1 = empty
+									custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+									custom_slot_3 = nrm_support_cruiser_FP_1
+									custom_slot_4 = nrm_support_cruiser_AA_1
+									custom_slot_5 = empty
+									custom_slot_6 = empty
+								}
+							}
+						}
+					}
+					POR = {
+						create_equipment_variant = {
+							name = "Atlântico Class"	
+							type = nrm_ship_hull_cruiser_3
+							name_group = POR_CL_HISTORICAL
+							parent_version = 0
+							role_icon_index = 2
+							modules = {
+								fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_3
+								fixed_ship_engine_slot = nrm_cruiser_engine_S2_080
+								fixed_ship_armor_layout_slot = nrm_armour_layout_2
+								fixed_ship_armor_slot = nrm_cruiser_armour_03_2
+								fixed_ship_subdivision_slot = nrm_subdivision_2
+								fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+								fixed_ship_range_slot = nrm_range_cruiser_1h
+								fixed_ship_radar_slot = empty
+								fixed_ship_fire_control_system_slot = nrm_fire_control_3
+								fixed_ship_fire_control_system_aa_slot = empty
+								fixed_ship_battery_slot = nrm_cruiser_battery_6_3_x06
+								fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_3_x04
+								fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_3_2_x08
+								custom_slot_1 = empty
+								custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+								custom_slot_3 = nrm_support_cruiser_FP_1
+								custom_slot_4 = nrm_support_cruiser_AA_1
+								custom_slot_5 = empty
+								custom_slot_6 = empty
+							}
+						}
+					}
+					create_ship = { type = nrm_ship_hull_cruiser_3 equipment_variant = "Atlântico Class" creator = ITA }
+				}
+				else = {
+					hidden_effect = { 
+						add_manpower = 800 
+						ITA = {
+							create_equipment_variant = {
+								name = "Atlântico Class"	
+								type = nrm_ship_hull_cruiser_2
+								name_group = POR_CL_HISTORICAL
+								parent_version = 0
+								role_icon_index = 2
+								modules = {
+									fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_2
+									fixed_ship_engine_slot = nrm_cruiser_engine_S2_070
+									fixed_ship_armor_layout_slot = nrm_armour_layout_2
+									fixed_ship_armor_slot = nrm_cruiser_armour_03_2
+									fixed_ship_subdivision_slot = nrm_subdivision_2
+									fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+									fixed_ship_range_slot = nrm_range_cruiser_1h
+									fixed_ship_radar_slot = empty
+									fixed_ship_fire_control_system_slot = nrm_fire_control_3
+									fixed_ship_fire_control_system_aa_slot = empty
+									fixed_ship_battery_slot = nrm_cruiser_battery_6_2_x04
+									fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_2_x04
+									fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_3_2_x08
+									custom_slot_1 = empty
+									custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+									custom_slot_3 = nrm_support_cruiser_FP_1
+									custom_slot_4 = nrm_support_cruiser_AA_1
+									custom_slot_5 = empty
+									custom_slot_6 = empty
+								}
+							}
+						}
+					}
+					POR = {
+						create_equipment_variant = {
+							name = "Atlântico Class"	
+							type = nrm_ship_hull_cruiser_2
+							name_group = POR_CL_HISTORICAL
+							parent_version = 0
+							role_icon_index = 2
+							modules = {
+								fixed_ship_hullform_slot = nrm_ship_hullform_cruiser_2
+								fixed_ship_engine_slot = nrm_cruiser_engine_S2_070
+								fixed_ship_armor_layout_slot = nrm_armour_layout_2
+								fixed_ship_armor_slot = nrm_cruiser_armour_03_2
+								fixed_ship_subdivision_slot = nrm_subdivision_2
+								fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
+								fixed_ship_range_slot = nrm_range_cruiser_1h
+								fixed_ship_radar_slot = empty
+								fixed_ship_fire_control_system_slot = nrm_fire_control_3
+								fixed_ship_fire_control_system_aa_slot = empty
+								fixed_ship_battery_slot = nrm_cruiser_battery_6_2_x04
+								fixed_ship_battery_rear_slot = nrm_cruiser_battery_6_2_x04
+								fixed_ship_tertiary_slot = nrm_cruiser_tertiary_HA_3_2_x08
+								custom_slot_1 = empty
+								custom_slot_2 = nrm_support_cruiser_TRP_21_2_x06
+								custom_slot_3 = nrm_support_cruiser_FP_1
+								custom_slot_4 = nrm_support_cruiser_AA_1
+								custom_slot_5 = empty
+								custom_slot_6 = empty
+							}
+						}
+					}
+					create_ship = { type = nrm_ship_hull_cruiser_2 equipment_variant = "Atlântico Class" creator = ITA }
+				}
+			}
+
+			ITA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -2
+				}
+			}
+			country_event = lar_portugal_purchase_ships.6
+			set_country_flag = POR_ships_purchased_flag
+			clr_country_flag = POR_purchase_italian_light_cruiser_flag
+			clr_country_flag = POR_ships_purchase_in_progress_flag
+		}
+	}
+}
+
+

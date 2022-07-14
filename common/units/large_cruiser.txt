@@ -1,0 +1,1 @@
+#MOVED TO 0_large_cruiser.txt to share nrm_ship_hull_capital archetype with Battlecruiser and Battleship

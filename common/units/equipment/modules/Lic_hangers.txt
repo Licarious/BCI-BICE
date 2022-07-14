@@ -1,0 +1,70 @@
+equipment_modules = {
+	# Hanger Modules
+	lic_hybrid_deck_hanger_04 = {
+		category = lic_hybrid_deck_hanger
+		
+		manpower = 24
+		add_stats = {
+			build_cost_ic = 80
+			carrier_size = 4
+			surface_visibility = 0.4
+		}
+		multiply_stats = {
+			reliability = -0.004
+			fuel_consumption = 0.0025
+		}
+	}
+	
+	lic_hybrid_deck_hanger_08 = {
+		category = lic_hybrid_deck_hanger
+		
+		manpower = 50
+		add_stats = {
+			build_cost_ic = 150
+			carrier_size = 8
+			surface_visibility = 0.8
+		}
+		multiply_stats = {
+			reliability = -0.006
+			fuel_consumption = 0.005
+		}
+	}
+	
+	# Deck Styles
+	lic_armored_flight_deck = {
+		category = lic_hybrid_deck_style
+		
+		manpower = -40
+		add_stats = {
+			build_cost_ic = 400
+			max_strength = 10
+			supply_consumption = 0.005
+			surface_visibility = 0.5
+		}
+		multiply_stats = {
+			carrier_size = -0.2
+			max_organisation = 1
+			reliability = 0.015
+			armor_value = 0.4
+			fuel_consumption = -0.006
+		}
+		dismantle_cost_ic = 200
+	}
+	
+	lic_open_flight_deck = {
+		category = lic_hybrid_deck_style
+		
+		manpower = 40
+		add_stats = {
+			build_cost_ic = 100
+			max_strength = -2
+			supply_consumption = 0.005
+			surface_visibility = 0.15
+		}
+		multiply_stats = {
+			carrier_size = 0.2
+			reliability = 0.015
+			armor_value = -0.2
+		}
+		dismantle_cost_ic = 100
+	}

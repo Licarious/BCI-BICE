@@ -1,0 +1,22 @@
+generic = {
+	submarine_cv = {
+		prefix = ""
+		generic = { "Submarine Carrier" }
+		unique = {}
+	}
+	submarine_cruiser = {
+		prefix = ""
+		generic = { "Cruiser Submarine" }
+		unique = {}
+	}
+	cruiser_cv = {
+		prefix = ""
+		generic = { "Aircraft Cruiser" }
+		unique = {}
+	}
+	heavy_cv = {
+		prefix = ""
+		generic = { "Battle Carrier" }
+		unique = {}
+	}
+}
