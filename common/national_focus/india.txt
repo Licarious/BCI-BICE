@@ -126,7 +126,7 @@ focus_tree = {
 			}
 			add_opinion_modifier = { target = ENG modifier = RAJ_indian_national_congress }
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = RAJ_bhimrao_ramji_ambedkar
+			show_ideas_tooltip = RAJ_bhimrao_ramji_ambedkar_influence_minister
 			hidden_effect = { news_event = { id = news.283 hours = 12 } }
 		}
 	}
@@ -202,8 +202,8 @@ focus_tree = {
 			add_political_power = 120
 			add_ideas = RAJ_all_india_forward_bloc
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = RAJ_karam_singh_mann
-			show_ideas_tooltip = RAJ_subhas_chanda_bose
+			show_ideas_tooltip = RAJ_karam_singh_mann_influence_minister
+			show_ideas_tooltip = RAJ_subhas_chanda_bose_influence_minister
 		}
 	}
 
@@ -1464,7 +1464,7 @@ focus_tree = {
 		hidden_effect = {
 			add_corps_commander_role = {
 				character = RAJ_orde_wingate
-				traits = { jungle_rat }
+				traits = { jungle_5 }
 				skill = 4
 					attack_skill = 2
 					defense_skill = 3
@@ -1704,7 +1704,7 @@ focus_tree = {
 				}
 				add_corps_commander_role = {
 					character = RAJ_kodandera_subayya_thimayya
-					traits = { jungle_rat }
+					traits = { jungle_5 }
 					skill = 3
 					attack_skill = 3
 					defense_skill = 3
@@ -2741,7 +2741,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = RAJ_homi_j_bhabha
+			show_ideas_tooltip = RAJ_homi_j_bhabha_theorist
 			add_tech_bonus = {
 				name = RAJ_institute_of_fundamental_research
 				bonus = 0.5

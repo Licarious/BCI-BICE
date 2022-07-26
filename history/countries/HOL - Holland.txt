@@ -296,7 +296,7 @@ recruit_character = HOL_laurentius_nicolaas
 recruit_character = HOL_johan_albarda
 
 
-activate_advisor = HOL_wilhelmina
+activate_advisor = HOL_queen_wilhelmina_head_of_state
 
 ### Ship Variants ###
 ##############################################################################

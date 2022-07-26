@@ -12,10 +12,6 @@ set_war_support = 0.15
 
 set_country_flag = FRA_armor
 
-set_country_flag = FRA_navy
-
-set_country_flag = FRA_navy_sub
-
 set_country_flag = FRA_air
 set_country_flag = league_member
 set_country_flag = olympic_attendee
@@ -381,6 +377,8 @@ add_ideas = {
 	security_liberty_first
 	edu_high
 	foreign_interventionism
+	
+	tank_design_tech
 }
 
 if = {
@@ -683,11 +681,13 @@ recruit_character = FRA_victor_denain
 recruit_character = FRA_jean_marie_bergeret
 
 #politicians
-activate_advisor = albert_lebrun
-activate_advisor = yvon_delbos
-activate_advisor = marx_dormoy
-activate_advisor = maurice_henri_gauche
-activate_advisor = vincent_auriol
+activate_advisor = FRA_albert_lebrun_head_of_state
+activate_advisor = FRA_yvon_delbos_foreign_minister
+activate_advisor = FRA_marx_dormoy_interior_minister
+activate_advisor = FRA_maurice_henri_gauche_intel_minister
+activate_advisor = FRA_vincent_auriol_economic_minister
+
+activate_mission = foreign_minister_adventures
 
 ### Tank Variants ###
 create_equipment_variant = {

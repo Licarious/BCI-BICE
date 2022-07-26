@@ -269,7 +269,7 @@ recruit_character = TUR_ali_tarhan
 recruit_character = TUR_resat_erkmen
 recruit_character = TUR_generic_staunch_traditionalist
 
-activate_advisor = TUR_mustafa_kemal_ataturk
+activate_advisor = TUR_mustafa_kemal_ataturk_head_of_state
 ##### Ship Variants ##########################################################
 ##############################################################################
 ## DNM Variants - remember to replace all original naval variants

@@ -961,7 +961,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = kesago_nakajima
+			show_ideas_tooltip = JAP_kesago_nakajima_political_advisor
 			add_political_power = 50
 		}
 	}
@@ -1372,13 +1372,10 @@ focus_tree = {
 		cost = 16 # Previously was: 16.099999999999998 
 	
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_leader_with_trait = popular_figurehead2
-					}
-				}
-			add_country_leader_trait = popular_figurehead2
+			add_trait = {
+				character = JAP_hirohito
+				slot = head_of_state	
+				trait = popular_figurehead2
 			}
 			add_political_power = 50
 		}
@@ -1526,15 +1523,15 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = { type = support_equipment  amount = 500 producer = JAP }
 			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = kanin_kotohito
+			show_ideas_tooltip = JAP_kanin_kotohito_army_chief
 			if = {
 				limit = {
 					OR = {
-						NOT = { has_idea = hajime_sugiyama }
-						NOT = { has_idea = hideki_tojo }
+						NOT = { has_idea = JAP_hajime_sugiyama_army_chief }
+						NOT = { has_idea = JAP_hideki_tojo_army_chief }
 					}
 				}
-				#add_ideas = kanin_kotohito
+				add_ideas = JAP_kanin_kotohito_army_chief
 			}
 			add_tech_bonus = {
 				name = support_bonus
@@ -1583,7 +1580,7 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 10
 			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = tomoyuki_yamashita
+			show_ideas_tooltip = JAP_yamashita_tomoyuki_theorist
 			add_tech_bonus = {
 				name = JAP_Doc_Bonus
 				uses = 2
@@ -1782,7 +1779,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_named_threat = { threat = 1 name = soviet.1.t }
-			custom_effect_tooltip = bigger_border_wars_TT
+			add_timed_idea = {
+				idea = JAP_test_soviets
+				days = 75
+			}
+			add_to_variable = { border_strength = 1 tooltip = border_increased_TT }
 		}
 	}
 	
@@ -1841,7 +1842,7 @@ focus_tree = {
 		
 		completion_reward = {		
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = PM_hideki_tojo
+			show_ideas_tooltip = JAP_hideki_tojo_political_advisor
 			remove_ideas = JAP_gekokujo_idea_2
 			530 = {
 				add_extra_state_shared_building_slots = 3
@@ -1901,7 +1902,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = JAP_hiroshi_oshima
+			show_ideas_tooltip = JAP_hiroshi_oshima_interior_minister
 			add_equipment_to_stockpile = { type = infantry_equipment  amount = 1000 producer = JAP }
 			add_tech_bonus = {
 				name = JAP_mili_police
@@ -2496,7 +2497,7 @@ focus_tree = {
 	
 		completion_reward = {			
 			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = jisaburo_ozawa
+			show_ideas_tooltip = JAP_ozawa_jisaburo_high_command
 			add_ideas = JAP_the_waves_idea
 			hidden_effect = { set_technology = { the_waves_tech = 1 } }
 		}
@@ -2544,7 +2545,7 @@ focus_tree = {
 	
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = yasuji_okamura
+			show_ideas_tooltip = JAP_okamura_yasuji_high_command
 			add_ideas = JAP_the_soil_idea
 			hidden_effect = { set_technology = { the_soil_tech = 1 } }
 		}		
@@ -2615,7 +2616,7 @@ focus_tree = {
 		completion_reward = {
 		navy_experience = 10
 			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = isoroku_yamamoto
+			show_ideas_tooltip = JAP_yamamoto_isoroku_theorist
 			add_tech_bonus = {
 				name = JAP_Navy_Doc_Bonus
 				uses = 2
@@ -2701,7 +2702,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = JAP_1
+			show_ideas_tooltip = JAP_shimomura_sadamu_theorist
 			add_tech_bonus = {
 				name = JAP_Arty_Bonus
 				uses = 2
@@ -2742,7 +2743,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 
 		available = {				
-				has_idea = PM_hideki_tojo				
+				has_idea = JAP_hideki_tojo_political_advisor				
 		}	
 		completion_reward = {
 			282 = {
@@ -2904,7 +2905,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = chuichi_nagumo
+			show_ideas_tooltip = JAP_nagumo_chuichi_high_command
 			add_ideas = JAP_carrier_focus_idea
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
@@ -2955,7 +2956,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = soemu_toyoda
+			show_ideas_tooltip = JAP_toyoda_soemu_high_command
 			add_ideas = JAP_battleship_focus_idea
 			add_tech_bonus = {
 				name = naval_doctrine_bonus
@@ -3506,7 +3507,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 60
 			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = nishizo_tsukahara
+			show_ideas_tooltip = JAP_nishizo_tsukahara_high_command
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = JAP_guy5		
 		}
@@ -3777,6 +3778,9 @@ focus_tree = {
 					741 = {
 						NOT = { is_controlled_by = FRA }
 					}
+					833 = {
+						NOT = { is_controlled_by = FRA }
+					}
 				}
 				has_wargoal_against = FRA
 				has_war_with = FRA
@@ -3826,6 +3830,9 @@ focus_tree = {
 						741 = {
 							is_controlled_by = FRA
 						}
+						833 = {
+							is_controlled_by = FRA
+						}
 					}
 					NOT = { has_wargoal_against = FRA }
 					NOT = { has_war_with = FRA }
@@ -3834,7 +3841,7 @@ focus_tree = {
 				create_wargoal = {
 					target = FRA
 					type = take_state_focus
-					generator = { 671 670 286 741 }
+					generator = { 671 670 286 741 833 }
 				}
 			}
 		}
@@ -4842,16 +4849,6 @@ focus_tree = {
 
 
 		available = {
-			OR = {
-				MEN = {
-					is_in_faction_with = ROOT
-					is_subject_of = ROOT
-					has_full_control_of_state = 608
-					OR = {
-						has_full_control_of_state = 743
-						has_full_control_of_state = 613
-					}
-				}
 				RGR = {
 					is_in_faction_with = ROOT
 					is_subject_of = ROOT
@@ -4861,16 +4858,6 @@ focus_tree = {
 						has_full_control_of_state = 613
 					}
 				}
-				WJW = {
-					is_in_faction_with = ROOT
-					is_subject_of = ROOT
-					has_full_control_of_state = 608
-					OR = {
-						has_full_control_of_state = 743
-						has_full_control_of_state = 613
-					}
-				}
-			}
 		}
 
 		bypass = {
@@ -4881,25 +4868,19 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
-
 		completion_reward = {
-			if = {
-				limit = { country_exists = MEN }
-				MEN = {
-					add_stability = 0.15
-				}
-			}
-			if = {
-				limit = { country_exists = RGR }
+		
 				RGR = {
-					add_stability = 0.15
+				add_stability = 0.10
+				add_equipment_to_stockpile = {
+					type = garrison_equipment
+					amount = 800
+					producer = JAP
 				}
-			}
-			if = {
-				limit = { country_exists = WJW }
-				WJW = {
-					add_stability = 0.15
+				add_equipment_to_stockpile = {
+					type = infantry_uniforms
+					amount = 800
+					producer = JAP
 				}
 			}
 		}
@@ -5669,16 +5650,6 @@ focus_tree = {
 
 
 		available = {
-			OR = {
-				MEN = {
-					is_in_faction_with = ROOT
-					is_subject_of = ROOT
-					has_full_control_of_state = 608
-					OR = {
-						has_full_control_of_state = 743
-						has_full_control_of_state = 613
-					}
-				}
 				RGR = {
 					is_in_faction_with = ROOT
 					is_subject_of = ROOT
@@ -5688,16 +5659,6 @@ focus_tree = {
 						has_full_control_of_state = 613
 					}
 				}
-				WJW = {
-					is_in_faction_with = ROOT
-					is_subject_of = ROOT
-					has_full_control_of_state = 608
-					OR = {
-						has_full_control_of_state = 743
-						has_full_control_of_state = 613
-					}
-				}
-			}			
 		}
 
 		bypass = {
@@ -5711,60 +5672,10 @@ focus_tree = {
 		
 
 		completion_reward = {
-			custom_effect_tooltip = JAP_chinese_interrior_tt
-			effect_tooltip = {
-				if = {
-					limit = { 
-						country_exists = MEN
-						MEN = { has_full_control_of_state = 608 }
-					}
-					MEN = {				
-						every_state = {
-							limit = { is_core_of = CHI }
-							add_claim_by = MEN
-						}
-						add_popularity = { ideology = fascism popularity = 0.1 }	
-					}
-				}
-				if = {
-					limit = { 
-						country_exists = RGR
-						RGR = { has_full_control_of_state = 608 }
-					}
 					RGR = {				
-						every_state = {
-							limit = { is_core_of = CHI }
-							add_claim_by = RGR
-						}
 						add_popularity = { ideology = fascism popularity = 0.1 }	
-					}
+				add_stability = 0.05
 				}
-				if = {
-					limit = { 
-						country_exists = WJW
-						WJW = { has_full_control_of_state = 608 }
-					}
-					WJW = {				
-						every_state = {
-							limit = { is_core_of = CHI }
-							add_claim_by = WJW
-						}
-						add_popularity = { ideology = fascism popularity = 0.1 }	
-					}
-				}
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = jap_china_occupation_setup }
-					NOT = { country_exists = RGR }
-					country_exists = MEN
-				}
-				set_country_flag = jap_china_occupation_setup
-				set_country_flag = MEN_is_reorganized_china
-				hidden_effect = {
-					MEN = { load_focus_tree = MEN_focus }
-				}
-			}
 		}
 	}
 	focus = {
@@ -5838,15 +5749,6 @@ focus_tree = {
 
 
 		available = {
-			OR = {
-				MEN = {
-					is_subject_of = ROOT
-					has_stability > 0.6
-					has_full_control_of_state = 608
-			     	has_full_control_of_state = 743
-				    has_full_control_of_state = 613
-					has_full_control_of_state = 605
-				}
 				RGR = {
 					is_subject_of = ROOT
 					has_stability > 0.6
@@ -5855,15 +5757,6 @@ focus_tree = {
 				    has_full_control_of_state = 613
 					has_full_control_of_state = 605
 				}
-				WJW = {
-					is_subject_of = ROOT
-					has_stability > 0.6
-					has_full_control_of_state = 608
-			     	has_full_control_of_state = 743
-				    has_full_control_of_state = 613
-					has_full_control_of_state = 605
-				}
-			}
             MAN = {
 			    has_completed_focus = MCK_for_the_emperor
 				is_subject_of = ROOT
@@ -5888,13 +5781,7 @@ focus_tree = {
 
 		completion_reward = {
 	     	add_stability = 0.1
-		    MEN = {
-				add_stability = 0.1
-			}
 			RGR = {
-				add_stability = 0.1
-			}
-			WJW = {
 				add_stability = 0.1
 			}
             MAN = {
@@ -5917,16 +5804,6 @@ focus_tree = {
 
 
 		available = {
-			OR= {
-				MEN = {
-					is_in_faction_with = ROOT
-					is_subject_of = ROOT
-					has_full_control_of_state = 608
-					OR = {
-			     		has_full_control_of_state = 743
-				    	has_full_control_of_state = 613
-					}
-				}
 				RGR = {
 					is_in_faction_with = ROOT
 					is_subject_of = ROOT
@@ -5936,16 +5813,6 @@ focus_tree = {
 				    	has_full_control_of_state = 613
 					}
 				}
-				WJW = {
-					is_in_faction_with = ROOT
-					is_subject_of = ROOT
-					has_full_control_of_state = 608
-					OR = {
-			     		has_full_control_of_state = 743
-				    	has_full_control_of_state = 613
-					}
-				}
-			}
 		}
 
 		bypass = {
@@ -5959,17 +5826,6 @@ focus_tree = {
 		
 
 		completion_reward = {
-			if = {
-				limit = { 608 = { is_fully_controlled_by = MEN } }
-				MEN = {
-					add_political_power = 100
-					add_stability = 0.1
-					add_country_leader_trait = puppet_emperor
-				}
-				add_political_power = 100
-			}
-			else_if = {
-				limit = { 608 = { is_fully_controlled_by = RGR } }
 				RGR = {
 					add_political_power = 100
 					add_stability = 0.1
@@ -5977,16 +5833,6 @@ focus_tree = {
 				}
 				add_political_power = 100
 			}
-			else_if = {
-				limit = { 608 = { is_fully_controlled_by = WJW } }
-				WJW = {
-					add_political_power = 100
-					add_stability = 0.1
-					add_country_leader_trait = puppet_emperor
-				}
-				add_political_power = 100
-			}
-		}
 	}
 	
 	focus = {
@@ -6029,8 +5875,8 @@ focus_tree = {
 
 		completion_reward = {
 		    MAN = {
-				remove_ideas = puyi
-				if = { limit = { JAP = { has_government = fascism } }
+				remove_ideas = MAN_emperor_puyi_head_of_state
+				if = { limit = { JAP = { has_democratic_govt = no } }
 					add_popularity = { ideology = fascism popularity = 0.1 }	
 				}
 				else_if = { limit = { JAP = { has_government = monarchism } }
@@ -6038,7 +5884,7 @@ focus_tree = {
 				} 
 				#set_party_name = { ideology = fascism long_name = MCK_RFP_rebelled_party_long name = MCK_RFP_rebelled_party }
 				retire_country_leader = yes
-				if = { limit = { JAP = { has_government = fascism } }					
+				if = { limit = { JAP = { has_democratic_govt = no } }					
 					set_politics = {
 						ruling_party = fascism
 					}		
@@ -6703,7 +6549,7 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = available_air_chief
-			show_ideas_tooltip = korechika_anami
+			show_ideas_tooltip = JAP_koiso_kuniaki_air_chief
 			air_experience = 20
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -6748,7 +6594,7 @@ focus_tree = {
 	
 		completion_reward = {
 			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = yoshitoshi_tokugawa
+			show_ideas_tooltip = JAP_yoshitoshi_tokugawa_theorist
 			add_ideas = JAP_pilot_academy_idea
 			add_tech_bonus = {
 				name = JAP_pilot_academy
@@ -6933,8 +6779,8 @@ focus_tree = {
 		cost = 70 # Previously was: 70.0 
 
 		available = {
-				has_idea = yoshio_nishina
-				has_idea = PM_hideki_tojo				
+				has_idea = JAP_yoshio_nishina_theorist
+				has_idea = JAP_hideki_tojo_political_advisor				
 		}	
 		completion_reward = {					
 			add_tech_bonus = {
@@ -6956,8 +6802,8 @@ focus_tree = {
 		cost = 70 # Previously was: 70.0 
 
 		available = {
-				has_idea = yoshio_nishina
-				has_idea = PM_hideki_tojo				
+				has_idea = JAP_yoshio_nishina_theorist
+				has_idea = JAP_hideki_tojo_political_advisor				
 		}			
 		completion_reward = {
 					

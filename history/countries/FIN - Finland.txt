@@ -274,7 +274,7 @@ recruit_character = FIN_jarl_lundqvist
 recruit_character = FIN_olavi_sarko
 recruit_character = FIN_valio_porvari
 
-activate_advisor = FIN_pehr_evind
+activate_advisor = FIN_pehr_evind_head_of_state
 ###################################################
 ## DNM Variants
 ###################################################

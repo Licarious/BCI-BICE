@@ -10,10 +10,6 @@ set_war_support = 0.1
 
 set_country_flag = ENG_armor
 
-set_country_flag = ENG_navy
-
-set_country_flag = ENG_navy_sub
-
 set_country_flag = ENG_air
 # United Kingdom starts out as the country responsible for curbing Hungary's expansion
 set_country_flag = HUN_policing_expansion_of_hungary
@@ -434,6 +430,8 @@ add_ideas = {
 	security_liberty_first
 	edu_high
 	foreign_cooperative
+	
+	tank_design_tech
 }
 
 set_country_flag = const_monarchy
@@ -812,15 +810,16 @@ recruit_character = ENG_luce_david
 recruit_character = ENG_ashmore_edward
 recruit_character = ENG_blake_geoffrey
 
-activate_advisor = george_v
-activate_advisor = anthony_eden
-activate_advisor = sir_samuel_hoare
-activate_advisor = stewart_menzies
-activate_advisor = neville_chamberlain
-activate_advisor = cyril_deverell
-activate_advisor = ernle_chatfield
-activate_advisor = edward_ellington
+activate_advisor = ENG_george_v_head_of_state
+activate_advisor = ENG_anthony_eden_foreign_minister
+activate_advisor = ENG_sir_samuel_hoare_interior_minister
+activate_advisor = ENG_stewart_menzies_intel_minister
+activate_advisor = ENG_neville_chamberlain_economic_minister
+activate_advisor = ENG_cyril_deverell_army_chief
+activate_advisor = ENG_ernle_chatfield_navy_chief
+activate_advisor = ENG_edward_ellington_air_chief
 
+activate_mission = foreign_minister_adventures
 ### Tank Variants ###
 create_equipment_variant = {
 	name = "Tankette Mk.VI"
@@ -1807,7 +1806,7 @@ if = {
 			fixed_ship_hullform_slot = nrm_ship_hullform_light_2
 			fixed_ship_engine_slot = nrm_destroyer_engine_S1_003
 			fixed_ship_sonar_slot = nrm_sonar_3
-			fixed_ship_battery_slot = nrm_destroyer_battery_4_2_x6
+			fixed_ship_battery_slot = nrm_destroyer_battery_HA_4_2_x6
 			fixed_ship_subdivision_slot = nrm_subdivision_2
 			fixed_ship_damagecontrol_slot = nrm_damagecontrol_2
 			fixed_ship_range_slot = nrm_range_light_large_2h

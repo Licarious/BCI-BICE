@@ -337,7 +337,7 @@ recruit_character = SPA_agustin_munoz_grandes
 recruit_character = SPA_joaquin_garcia_morato
 recruit_character = SPA_angel_salas_larrazabal
 
-activate_advisor = SPR_zamora
+activate_advisor = SPR_zamora_head_of_state
 
 ##### Variants ##########################################################
 #########################################################################

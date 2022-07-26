@@ -10,12 +10,7 @@ set_stability = 0.8
 
 set_war_support = 0.4
 
-set_country_flag = GER
-
 set_country_flag = GER_armor
-
-set_country_flag = GER_navy
-set_country_flag = GER_navy_sub
 set_country_flag = GER_air
 
 
@@ -401,10 +396,6 @@ set_technology = {
 
 #unlock_national_focus = GER_algemeine_ss -switch to enable SS and upgradeable units
 
-set_country_flag = goering_powerful
-
-set_country_flag = himmler_powerful
-
 #Trade
 create_import = {
 	resource = tungsten
@@ -523,6 +514,7 @@ recruit_character = GER_alfried_krupp
 recruit_character = GER_fritz_todt
 recruit_character = GER_albert_speer
 recruit_character = GER_konstantin_hierl
+recruit_character = GER_georg_thomas
 #### Domestic Ministers ###
 recruit_character = GER_richard_darre
 recruit_character = GER_herbert_backe
@@ -674,6 +666,7 @@ recruit_character = GER_SS_matthias_kleinheisterkamp
 recruit_character = GER_SS_erich_bach_zelewski
 recruit_character = GER_SS_otto_baum
 recruit_character = GER_SS_alfred_bernhard_wunnenberg
+recruit_character = GER_SS_otto_skorzeny
 
 ### air commanders
 recruit_character = GER_ramcke_hermannbernhard
@@ -686,17 +679,19 @@ recruit_character = GER_godt_eberhard_friedrich_clemens
 recruit_character = GER_hartmann_werner
 recruit_character = GER_scheer_werner
 
-activate_advisor = hitler_hos				#HOS
-activate_advisor = konstantin_von_neurath 	#FM
-activate_advisor = heinrich_himmler     	#interior
-activate_advisor = wilhelm_canaris      	#intel
-activate_advisor = hjalmar_schacht      	#econ
-activate_advisor = hermann_goering      	#poli
-activate_advisor = rudolf_hess          	#poli
-activate_advisor = werner_von_fritsch   	#SUPCOM
-activate_advisor = ludwig_beck_coa			#ARMYCOM
-activate_advisor = hermann_goering_coair	#AIRCOM
-activate_advisor = erich_raeder_con			#NAVYCOM
+activate_advisor = GER_adolf_hitler_head_of_state				#HOS
+activate_advisor = GER_konstantin_von_neurath_foreign_minister 	#FM
+activate_advisor = GER_heinrich_himmler_interior_minister     	#interior
+activate_advisor = GER_wilhelm_canaris_intel_minister      	#intel
+activate_advisor = GER_hjalmar_schacht_economic_minister      	#econ
+activate_advisor = GER_hermann_goering_political_advisor      	#poli
+activate_advisor = GER_rudolf_hess_domestic_minister          	#poli
+activate_advisor = GER_werner_von_fritsch_supreme_commander   	#SUPCOM
+activate_advisor = GER_ludwig_beck_army_chief			#ARMYCOM
+activate_advisor = GER_hermann_goering_air_chief	#AIRCOM
+activate_advisor = GER_erich_raeder_navy_chief			#NAVYCOM
+
+activate_mission = foreign_minister_adventures
 
 add_ideas = {
 	sour_loser
@@ -724,6 +719,8 @@ add_ideas = {
 	major_industries
 	fdi_banned
 	tariffs_high
+	
+	tank_design_tech
 }
 ### HTD Start ###
 set_country_flag = HTD_GER_trm_light_tank_chassis_ger_panzer1_1_a

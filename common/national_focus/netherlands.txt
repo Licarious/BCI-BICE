@@ -2274,9 +2274,9 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			remove_ideas = HOL_izaak_rijnders
+			remove_ideas = HOL_izaak_rijnders_army_chief
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HOL_henri_winkelman
+			show_ideas_tooltip = HOL_henri_winkelman_supreme_commander
 			remove_unit_leader = 980 #izaak_reijnders
 			custom_effect_tooltip = HOL_appoint_new_supreme_commander_tt
 			hidden_effect = {
@@ -3419,7 +3419,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = { idea = HOL_volk_en_vaderland days = 1095 }
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HOL_meinout_rost_van_tonningen
+			show_ideas_tooltip = HOL_meinout_rost_van_tonningen_influence_minister
 		}
 	}
 
@@ -4173,7 +4173,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = { idea = HOL_legacy_of_the_de_zeven_provincien_mutiny days = 1095 }
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HOL_saul_de_groot
+			show_ideas_tooltip = HOL_saul_de_groot_interior_minister
 		}
 	}
 
@@ -4349,7 +4349,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			remove_ideas = HOL_wilhelmina
+			remove_ideas = HOL_queen_wilhelmina_head_of_state
 			add_war_support = 0.1
 			add_ideas = HOL_red_is_the_new_orange
 			if = {
@@ -4887,7 +4887,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_politics = { ruling_party = monarchism elections_allowed = no }
-			remove_ideas = HOL_wilhelmina
+			remove_ideas = HOL_queen_wilhelmina_head_of_state
 			add_country_leader_role = { 
 				character = HOL_queen_wilhelmina
 					country_leader = {
@@ -5309,7 +5309,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_timed_idea = { idea = HOL_unity_through_democracy days = 1095 }
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = HOL_willem_schermerhorn
+			show_ideas_tooltip = HOL_willem_schermerhorn_economic_minister
 		}
 	}
 

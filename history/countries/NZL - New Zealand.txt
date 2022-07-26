@@ -349,7 +349,7 @@ recruit_character = NZL_arthur_sexton
 recruit_character = NZL_david_coleman
 recruit_character = NZL_clyde_carr
 
-activate_advisor = NZL_george_monckton
+activate_advisor = NZL_george_monckton_head_of_state
 ### Ship Variants ###
 #############################################################################################
 ## BICE - Remember to delete vanilla Leander (to ensure UK and NZ Leanders have same stats)##

@@ -11,11 +11,6 @@ set_stability = 0.6
 set_war_support = 0.7
 
 set_country_flag = ITA_armor
-
-set_country_flag = ITA_navy
-
-set_country_flag = ITA_navy_sub
-
 set_country_flag = ITA_air
 
 set_cosmetic_tag = ITA_MONARCHY
@@ -528,15 +523,17 @@ recruit_character = ITA_silvio_scaroni
 recruit_character = ITA_amedeo_mecozzi
 recruit_character = ITA_renato_sandalli
 	#politicians
-activate_advisor = victor_emmanuel
-activate_advisor = ITA_paolo_thaon_di_revel
-activate_advisor = cesare_ame
-activate_advisor = ITA_giovanni_marinelli
-activate_advisor = ITA_gian_galeazzo_ciano
-activate_advisor = alberto_pariani
-activate_advisor = domenico_cavagnari
-activate_advisor = italo_balbo
-activate_advisor = pietro_badoglio
+activate_advisor = ITA_victor_emmanuel_head_of_state
+activate_advisor = ITA_paolo_thaon_di_revel_economic_minister
+activate_advisor = ITA_cesare_ame_intel_minister
+activate_advisor = ITA_giovanni_marinelli_interior_minister
+activate_advisor = ITA_gian_galeazzo_ciano_foreign_minister
+activate_advisor = ITA_alberto_pariani_army_chief
+activate_advisor = ITA_domenico_cavagnari_navy_chief
+activate_advisor = ITA_balbo_italo_air_chief
+activate_advisor = ITA_badoglio_pietro_supreme_commander
+
+activate_mission = foreign_minister_adventures
 
 add_ideas = {
 	vittoria_mutilata

@@ -394,7 +394,7 @@ recruit_character = AST_ragnar_colvin
 recruit_character = AST_jack_crace
 recruit_character = AST_guy_royle
 
-activate_advisor = AST_isaac_isaacs_hos
+activate_advisor = AST_isaac_isaacs_head_of_state
 ### Ship Variants ###
 ####################################################################
 ## BICE - Remember to delete Sydney and Canberra from vanilla 

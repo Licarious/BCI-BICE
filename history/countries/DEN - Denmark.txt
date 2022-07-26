@@ -207,7 +207,6 @@ recruit_character = DEN_Christian_X
 recruit_character = DEN_thorvald_stauning
 recruit_character = DEN_frits_clausen
 recruit_character = DEN_aksel_larsen
-recruit_character = DEN_peter_rochegune_munch
 recruit_character = DEN_prior_wilhelm_wain
 recruit_character = DEN_crevecoeur_de
 recruit_character = DEN_ulrich
@@ -234,7 +233,7 @@ recruit_character = DEN_karl_steincke
 recruit_character = DEN_ejnar_warum
 recruit_character = DEN_alsing_andersen
 
-activate_advisor = DEN_Christian_X
+activate_advisor = DEN_Christian_X_head_of_state
 ###############################################################################
 ## BICE Variants
 ###############################################################################

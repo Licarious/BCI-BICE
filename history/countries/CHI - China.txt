@@ -329,7 +329,7 @@ recruit_character = CHI_gu_zhenggang
 recruit_character = CHI_liu_luyin
 recruit_character = CHI_claire_lee_chennault
 
-activate_advisor = 	KMT_falkenhausen
+activate_advisor = 	CHI_falkenhausen_theorist
 ########################################################################
 ## BICE variants
 ########################################################################

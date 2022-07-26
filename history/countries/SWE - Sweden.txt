@@ -294,7 +294,7 @@ recruit_character = SWE_georg_andren
 recruit_character = SWE_ernst_wigforss
 			
 
-activate_advisor = SWE_kungen_gustaf
+activate_advisor = SWE_gustaf_v_head_of_state
 
 ##### Ship Variants ##################################################
 ######################################################################

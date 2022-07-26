@@ -248,7 +248,7 @@ recruit_character = GRE_votsis
 recruit_character = GRE_charalambos_plapoutas
 recruit_character = GRE_epameinontas_kondylis
 
-activate_advisor = GRE_george
+activate_advisor = GRE_george_ii_head_of_state
 if = {
 	limit = {
 		AND = {

@@ -82,6 +82,7 @@ set_technology = {
 	################## artillery ###############
 	gw_artillery = 1
 	interwar_artillery = 1
+	interwar_medartillery = 1
 	################## armor-techs ##############
 	tech_ac_recon = 1
 	tech_liaison_cars = 1

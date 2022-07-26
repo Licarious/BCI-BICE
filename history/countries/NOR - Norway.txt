@@ -220,7 +220,7 @@ recruit_character = NOR_trygve_halvdan_lie
 recruit_character = NOR_halvdan_koht
 recruit_character = NOR_adolf_indrebo
 
-activate_advisor = haakon_vii
+activate_advisor = NOR_haakon_vii_head_of_state
 ###################################################
 ## BICE Variants
 ###################################################

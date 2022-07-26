@@ -10,15 +10,10 @@ set_stability = 0.65
 
 set_war_support = 0.8
 
-set_country_flag = SOV
 set_country_flag = five_year
 set_country_flag = BLACK_SEA_COUNTRY
 
 set_country_flag = SOV_armor
-
-set_country_flag = SOV_navy
-
-set_country_flag = SOV_navy_sub
 
 set_country_flag = SOV_air
 set_country_flag = league_member #expelled 14 December 1939
@@ -46,15 +41,15 @@ set_variable = { allowed_MR = 1 }
 set_variable = { moscov_build = 24 }
 set_variable = { leningrad_build = 23 }
 set_variable = { kiev_area_build = 12 }
-set_variable = { saratov_build = 16 }
+set_variable = { saratov_build = 15 }
 set_variable = { minsk_build = 8 }
 set_variable = { stalingrad_build = 11 }
 set_variable = { gorki_build = 12 }
 set_variable = { crimea_build = 5 }
 set_variable = { bryansk_build = 4 }
 set_variable = { kharkov_build = 10 }
-set_variable = { civ_target = 110 }
-set_variable = { steel_ref_target = 9 }
+set_variable = { civ_target = 111 }
+set_variable = { steel_ref_target = 8 }
 set_variable = { fuel_target = 1250000 }
 set_variable = { steel_target = 1000 }
 set_variable = { oil_target = 320 }
@@ -108,6 +103,8 @@ set_variable = { focus_tractor  = 250 }
 set_variable = { fort_tractors = 1000 }
 set_variable = { part_econ_tractors_target = 15000 }
 set_variable = { war_economy_tractors_target = 30000 }
+
+set_variable = { army_learns = 5 }
 
 set_variable = { guard_forces_factor = 0.1 } #=10% of army strength 
 
@@ -472,6 +469,7 @@ recruit_character = SOV_andrei_zhdanov
 recruit_character = SOV_august_kork
 #recruit_character = SOV_dmitriy_karbyshev
 recruit_character = SOV_christian_rakovsky
+recruit_character = SOV_Andrey_Andreevich_Andreev
 recruit_character = SOV_klavdiya_nikolayeva
 recruit_character = SOV_sergei_kruglov
 recruit_character = SOV_berzarin
@@ -480,6 +478,7 @@ recruit_character = SOV_ivan_konev
 recruit_character = SOV_ivan_bogdanov
 recruit_character = SOV_konstantin_rakutin
 recruit_character = SOV_kuzma_galitsky
+recruit_character = SOV_Pavel_Batov
 recruit_character = SOV_alexander_gorbatov
 recruit_character = SOV_nikolay_vatutin
 recruit_character = SOV_dmitry_pavlov
@@ -534,19 +533,21 @@ recruit_character = SOV_ivan_fedyuninsky
 recruit_character = SOV_vladimir_kasatonov
 
 	#politicians
-activate_advisor = mikhail_kalinin
-activate_advisor = SOV_maksim_litvinov
-activate_advisor = valery_mezhlauk
-activate_advisor = SOV_nikolai_yezhov
-activate_advisor = viktor_abakumov
+activate_advisor = SOV_mikhail_kalinin_head_of_state
+activate_advisor = SOV_maksim_litvinov_foreign_minister
+activate_advisor = SOV_valery_mezhlauk_economic_minister
+activate_advisor = SOV_genrikh_yagoda_interior_minister
+activate_advisor = SOV_viktor_abakumov_intel_minister
 	### Supreme Commander
-activate_advisor = kliment_voroshilov
+activate_advisor = SOV_voroshilov_kliment_supreme_commander
 	### Army Chief
-activate_advisor = alexander_yegorov
+activate_advisor = SOV_yegorov_alexander_army_chief
 	### Air Chief
-activate_advisor = aleksandr_loktionov
+activate_advisor = SOV_aleksandr_loktionov_air_chief
 	### Staffers
-activate_advisor = nikolay_kuznetsov
+activate_advisor = SOV_nikolay_kuznetsov_high_command
+
+activate_mission = foreign_minister_adventures
 
 add_ideas = {
 	
@@ -575,6 +576,8 @@ add_ideas = {
 	SOV_shipbuilding
 	SOV_airships
 	SOV_black_sea
+	
+	tank_design_tech
 }
 add_dynamic_modifier = {
 	modifier = tractor_production_costs

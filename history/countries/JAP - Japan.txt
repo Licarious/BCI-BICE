@@ -16,10 +16,6 @@ set_fuel_ratio = 1.0
 set_country_flag = olympic_attendee
 set_country_flag = JAP_armor
 
-set_country_flag = JAP_navy
-
-set_country_flag = JAP_navy_sub
-
 set_country_flag = JAP_air
 # Resistance stance
 # Port Arthur / Dalian
@@ -434,9 +430,9 @@ set_popularities = {
 	liberalism = 13
 	agrarianism = 3
 	socialism = 1.2
-	fascism = 49
+	fascism = 43.4
 	communism = 0.8
-	neutrality = 1
+	neutrality = 6.6
 	monarchism = 14
 }
 ##### Intel Agency #####
@@ -466,6 +462,7 @@ if = {
 	}
 }
 recruit_character = JAP_hirohito
+recruit_character = JAP_okada_keisuke
 recruit_character = JAP_kyuichi_tokuda
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_terauchi_hisaichi
@@ -475,6 +472,9 @@ recruit_character = JAP_yamashita_tomoyuki
 recruit_character = JAP_muto_akira
 recruit_character = JAP_ishiwara_kanji
 recruit_character = JAP_tanaka_shizuichi
+recruit_character = JAP_senjuro_hayashi
+recruit_character = JAP_fumimaro_konoe
+recruit_character = JAP_hiranuma_kiichiro
 recruit_character = JAP_okamura_yasuji
 recruit_character = JAP_nishio_toshizo
 recruit_character = JAP_ando_rikichi
@@ -582,15 +582,16 @@ recruit_character = JAP_nishizo_tsukahara
 recruit_character = JAP_matome_ugaki
 
 	#politicians
-activate_advisor = hirohito_hos
-activate_advisor = hachiro_arita
-activate_advisor = okinori_kaya
-activate_advisor = sadao_araki
-activate_advisor = harukichi_hyakutake
-activate_advisor = shizuichi_tanaka
-activate_advisor = hata_air
-activate_advisor = fushimi_hiroyasu
+activate_advisor = JAP_hirohito_head_of_state
+activate_advisor = JAP_hachiro_arita_foreign_minister
+activate_advisor = JAP_okinori_kaya_economic_minister
+activate_advisor = JAP_sadao_araki_influence_minister
+activate_advisor = JAP_harukichi_hyakutake_intel_minister
+activate_advisor = JAP_shizuichi_tanaka_interior_minister
+activate_advisor = JAP_hata_shunroku_air_chief
+activate_advisor = JAP_fushimi_hiroyasu_navy_chief
 
+activate_mission = foreign_minister_adventures
 ### HTD Start ###
 set_country_flag = HTD_JAP_trm_tankette_tank_chassis_jap_type92_1_a 
 set_country_flag = HTD_JAP_trm_tankette_tank_chassis_jap_type92_1_b 

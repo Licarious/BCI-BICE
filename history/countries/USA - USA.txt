@@ -14,11 +14,6 @@ set_war_support = 0
 set_convoys = 980
 
 set_country_flag = USA_armor
-
-set_country_flag = USA_navy
-
-set_country_flag = USA_navy_sub
-
 set_country_flag = USA_air
 set_country_flag = olympic_attendee
 set_variable = { var = senators_support value = 48 }
@@ -40,12 +35,6 @@ USA_recalc_congress_icon_frames = yes
 country_event = { id = usa.6 days = 307 }
 country_event = { id = politics.213 days = 962 }
 country_event = { id = targeted_decisions.15 days = 5 }
-country_event = { id = usa.42 days = 1754 }
-country_event = { id = usa.43 days = 2526 }
-country_event = { id = usa.44 days = 2609 }
-country_event = { id = usa.45 days = 3084 }
-country_event = { id = usa.46 days = 3028 }
-country_event = { id = usa.47 days = 2699 }
 country_event = { id = usa.73 days = 76 }
 
 news_event = { id = news.2246 days = 121 }
@@ -743,7 +732,6 @@ recruit_character = USA_hugh_drum
 recruit_character = USA_frank_andrews
 recruit_character = USA_delos_emmons
 recruit_character = USA_George_Brett
-recruit_character = USA_jonathan_wainwright
 recruit_character = USA_Joseph_McNarney
 recruit_character = USA_Brehon_Somervell
 recruit_character = USA_robert_richardson_jr
@@ -751,14 +739,16 @@ recruit_character = USA_Simon_Buckner_Jr
 recruit_character = USA_roy_geiger
 
 	#politicians
-activate_advisor = john_nance_garner
-activate_advisor = cordell_hull
-activate_advisor = j_edgar_hoover
-activate_advisor = frank_rowlett
-activate_advisor = malin_craig
-activate_advisor = oscar_westover
-activate_advisor = william_leahy
-activate_advisor = fdr_hos
+activate_advisor = USA_john_nance_garner_political_advisor
+activate_advisor = USA_cordell_hull_foreign_minister
+activate_advisor = USA_j_edgar_hoover_interior_minister
+activate_advisor = USA_frank_rowlett_intel_minister
+activate_advisor = USA_malin_craig_army_chief
+activate_advisor = USA_oscar_westover_air_chief
+activate_advisor = USA_william_leahy_navy_chief
+activate_advisor = USA_franklin_delano_roosevelt_head_of_state
+
+activate_mission = foreign_minister_adventures
 
 ### HTD Start ###
 set_country_flag = HTD_USA_trm_light_tank_chassis_usa_m2_1_a
