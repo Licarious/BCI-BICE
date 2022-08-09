@@ -259,7 +259,7 @@ naval_capital_battlecarrier = {
 					any_of = { nrm_capital_battery_16_3x2 nrm_capital_battery_15_3x2 }
 				}
 				fixed_ship_battery_rear_slot = {
-					any_of = { nrm_capital_battery_16_3x1_CV nrm_capital_battery_15_3x1_CV nrm_capital_flightdeck_long nrm_capital_flightdeck }
+					any_of = { nrm_capital_battery_16_3x1_CV nrm_capital_battery_15_3x1_CV nrm_capital_flightdeck_XL nrm_capital_flightdeck_long nrm_capital_flightdeck }
 				}
 				fixed_ship_secondary_slot = {
 					any_of = { nrm_capital_tertiary_DP_5_x12 nrm_capital_secondary_SB_6_x12 }
@@ -325,7 +325,7 @@ naval_capital_battlecarrier = {
 					any_of = { nrm_capital_battery_14_3x2 }
 				}
 				fixed_ship_battery_rear_slot = {
-					any_of = { nrm_capital_battery_14_3x1_cv_long nrm_capital_battery_14_3x1_cv nrm_capital_flightdeck_long nrm_capital_flightdeck }
+					any_of = { nrm_capital_battery_14_3x1_cv_long nrm_capital_battery_14_3x1_cv nrm_capital_flightdeck_XL nrm_capital_flightdeck_long nrm_capital_flightdeck }
 				}
 				fixed_ship_secondary_slot = {
 					any_of = { nrm_capital_tertiary_DP_5_x12 nrm_capital_secondary_SB_6_x12 }
@@ -390,7 +390,7 @@ naval_capital_battlecarrier = {
 					any_of = { nrm_capital_battery_16_3x2 nrm_capital_battery_15_3x2 }
 				}
 				fixed_ship_battery_rear_slot = {
-					any_of = { nrm_capital_battery_16_3x1_CV_long nrm_capital_battery_16_3x1_CV nrm_capital_battery_15_3x1_CV_long nrm_capital_battery_15_3x1_CV nrm_capital_flightdeck_long nrm_capital_flightdeck }
+					any_of = { nrm_capital_battery_16_3x1_CV_long nrm_capital_battery_16_3x1_CV nrm_capital_battery_15_3x1_CV_long nrm_capital_battery_15_3x1_CV nrm_capital_flightdeck_XL nrm_capital_flightdeck_long nrm_capital_flightdeck }
 				}
 				fixed_ship_secondary_slot = {
 					any_of = { nrm_capital_tertiary_DP_5_x12 nrm_capital_secondary_SB_6_x12 }

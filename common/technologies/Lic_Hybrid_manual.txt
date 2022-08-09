@@ -30,15 +30,21 @@ technologies = {
 	#Surface hybrid Pure Flight Deck
 	surface_hybrid_flightdeck_converted_small = {
 		enable_equipment_modules = {
-			nrm_cruiser_flightdeck_CHL_010
-			nrm_capital_flightdeck_CHL_020
+			nrm_cruiser_flightdeck_CHL_012
+			nrm_capital_flightdeck_CHL_016
 		}
 		ai_will_do = { factor = 0 }
 	}
 	surface_hybrid_flightdeck_converted_large = {
 		enable_equipment_modules = {
-			nrm_cruiser_flightdeck_CHL_020
-			nrm_capital_flightdeck_CHL_030
+			nrm_cruiser_flightdeck_CHL_024
+			nrm_capital_flightdeck_CHL_024
+		}
+		ai_will_do = { factor = 0 }
+	}
+	surface_hybrid_flightdeck_converted_XL = {
+		enable_equipment_modules = {
+			nrm_capital_flightdeck_CHL_032
 		}
 		ai_will_do = { factor = 0 }
 	}

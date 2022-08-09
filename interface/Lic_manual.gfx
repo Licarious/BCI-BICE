@@ -227,6 +227,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/equipmentdesigner/topviews/heavy_flight_deck_T2.dds"
 	}
 	spriteType = {
+		name = "GFX_SM_heavy_flight_deck_XL"
+		texturefile = "gfx/interface/equipmentdesigner/topviews/heavy_flight_deck_T3.dds"
+	}
+	spriteType = {
 		name = "GFX_SM_cruiser_flight_deck_long"
 		texturefile = "gfx/interface/equipmentdesigner/topviews/cruiser_flight_deck_T2.dds"
 	}

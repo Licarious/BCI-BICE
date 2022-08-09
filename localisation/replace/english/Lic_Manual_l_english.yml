@@ -8,9 +8,9 @@
  submarine_cruiser:0 "Cruiser Submarine"
  lr_submarine:0 "Fleet Submarine"
  
- lic_tech_handout.1:0 "Surface Hybrid tech initialization event"
- lic_tech_sub_handout.2:0 "Submarine Hybrid tech initialization event"
- lic_tech_sub_handout.1:0 "Submarine Turret tech initialization event"
+ lic_tech_handout.1.t:0 "Surface Hybrid tech initialization event"
+ lic_tech_sub_handout.2.t:0 "Submarine Hybrid tech initialization event"
+ lic_tech_sub_handout.1.t:0 "Submarine Turret tech initialization event"
 
  EQ_MOD_CAT_nrm_cruiser_battery_DP_x02_TITLE:0 "2-gun Dual Purpose Battery"
  EQ_MOD_CAT_nrm_cruiser_battery_DP_x05_TITLE:0 "5-gun Dual Purpose Battery"
@@ -67,15 +67,17 @@
  EQ_MOD_CAT_nrm_capital_flightdeck_TITLE:0 "Flight Decks"
  EQ_MOD_CAT_nrm_cruiser_flightdeck_TITLE:0 "Flight Decks"
  
- nrm_capital_flightdeck_CHL_020:0 "Converted Hanger (Size 20)"
- nrm_capital_flightdeck_CHL_030:0 "Converted Hanger (Size 30)"
- nrm_capital_flightdeck_CHL_020_desc:0 ""
- nrm_capital_flightdeck_CHL_030_desc:0 ""
+ nrm_capital_flightdeck_CHL_016:0 "Converted Hanger (Size 16)"
+ nrm_capital_flightdeck_CHL_024:0 "Converted Hanger (Size 24)"
+ nrm_capital_flightdeck_CHL_032:0 "Converted Hanger (Size 32)"
+ nrm_capital_flightdeck_CHL_016_desc:0 ""
+ nrm_capital_flightdeck_CHL_024_desc:0 ""
+ nrm_capital_flightdeck_CHL_032_desc:0 ""
  
- nrm_cruiser_flightdeck_CHL_010:0 "Converted Hanger (Size 10)"
- nrm_cruiser_flightdeck_CHL_020:0 "Converted Hanger (Size 20)"
- nrm_cruiser_flightdeck_CHL_010_desc:0 ""
- nrm_cruiser_flightdeck_CHL_020_desc:0 ""
+ nrm_cruiser_flightdeck_CHL_012:0 "Converted Hanger (Size 12)"
+ nrm_cruiser_flightdeck_CHL_024:0 "Converted Hanger (Size 24)"
+ nrm_cruiser_flightdeck_CHL_012_desc:0 ""
+ nrm_cruiser_flightdeck_CHL_024_desc:0 ""
  
  lic_hybrid_deck_hanger_04:0 "+4 Hanger Size"
  lic_hybrid_deck_hanger_08:0 "+8 Hanger Size"

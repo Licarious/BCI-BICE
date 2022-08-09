@@ -6036,6 +6036,16 @@ guiTypes = {
 						position = { x=0 y=0 }
 					}
 				}
+				containerWindowType = {
+					name = "nrm_capital_flightdeck_XL"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					iconType = {
+						name = "flight_deck"
+						spriteType = "GFX_SM_heavy_flight_deck_XL"
+						position = { x=0 y=0 }
+					}
+				}
 			}
 		}
 	}

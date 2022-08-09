@@ -353,6 +353,7 @@ equipments = {
 					#Pure Deck
 					nrm_capital_flightdeck
 					nrm_capital_flightdeck_long
+					nrm_capital_flightdeck_XL
 				
 					#Guns
 					nrm_capital_battery_11_2x1

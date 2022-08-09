@@ -4874,12 +4874,12 @@ technologies = {
         }
 		
 		enable_equipment_modules = { 
-			nrm_cruiser_flightdeck_CHL_010
-			nrm_capital_flightdeck_CHL_020
+			nrm_cruiser_flightdeck_CHL_012
+			nrm_capital_flightdeck_CHL_016
 		}
 		
 		on_research_complete = {
-			country_event = lic_tech_handout.1
+			country_event = lic_tech_handout.1			
 		}
 		categories = {
 			naval_equipment
