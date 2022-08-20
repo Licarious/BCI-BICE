@@ -533,7 +533,6 @@ activate_advisor = ITA_domenico_cavagnari_navy_chief
 activate_advisor = ITA_balbo_italo_air_chief
 activate_advisor = ITA_badoglio_pietro_supreme_commander
 
-activate_mission = foreign_minister_adventures
 
 add_ideas = {
 	vittoria_mutilata

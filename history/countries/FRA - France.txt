@@ -687,7 +687,6 @@ activate_advisor = FRA_marx_dormoy_interior_minister
 activate_advisor = FRA_maurice_henri_gauche_intel_minister
 activate_advisor = FRA_vincent_auriol_economic_minister
 
-activate_mission = foreign_minister_adventures
 
 ### Tank Variants ###
 create_equipment_variant = {

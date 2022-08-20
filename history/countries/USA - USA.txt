@@ -748,12 +748,11 @@ activate_advisor = USA_oscar_westover_air_chief
 activate_advisor = USA_william_leahy_navy_chief
 activate_advisor = USA_franklin_delano_roosevelt_head_of_state
 
-activate_mission = foreign_minister_adventures
 
 ### HTD Start ###
 set_country_flag = HTD_USA_trm_light_tank_chassis_usa_m2_1_a
 set_country_flag = HTD_USA_trm_light_tank_chassis_usa_m2_1_b
-set_country_flag = trm_cavalry_tank_chassis_usa_m1_1_a
+set_country_flag = HTD_USA_trm_cavalry_tank_chassis_usa_m1_1_a
 
 ### Tank Variants ###
 create_equipment_variant = {

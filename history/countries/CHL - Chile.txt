@@ -8,6 +8,7 @@ set_war_support = 0.15
 set_country_flag = league_member
 set_country_flag = olympic_attendee
 country_event = { id = league.15 days = 864 } #left 14 May 1938
+news_event = { id = news.2254 days = 1119 }
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }

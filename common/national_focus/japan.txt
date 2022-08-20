@@ -1522,17 +1522,17 @@ focus_tree = {
 	
 		completion_reward = {
 			add_equipment_to_stockpile = { type = support_equipment  amount = 500 producer = JAP }
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = JAP_kanin_kotohito_army_chief
+			custom_effect_tooltip = available_chief_of_army_or_add
 			if = {
 				limit = {
-					OR = {
-						NOT = { has_idea = JAP_hajime_sugiyama_army_chief }
-						NOT = { has_idea = JAP_hideki_tojo_army_chief }
+					has_country_flag = has_army_chief
 					}
+				show_ideas_tooltip = JAP_kanin_kotohito_army_chief
 				}
+			else = {
 				add_ideas = JAP_kanin_kotohito_army_chief
 			}
+		
 			add_tech_bonus = {
 				name = support_bonus
 				bonus = 0.4

@@ -11,6 +11,7 @@ set_country_flag = olympic_attendee
 set_convoys = 530	# biggest merchant marine in the world (small ships, low GRT)
 country_event = { id = norway.5 days = 353 } #Kick out Trotsky
 country_event = { id = norway.30 days = 486 } #Odd airport event
+country_event = { id = norway.6 days = 1109 } #Maud Land
 news_event = { id = worldnews.8 days = 344 } #nobel prizes
 
 set_stability = 0.7

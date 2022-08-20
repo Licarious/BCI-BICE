@@ -591,7 +591,6 @@ activate_advisor = JAP_shizuichi_tanaka_interior_minister
 activate_advisor = JAP_hata_shunroku_air_chief
 activate_advisor = JAP_fushimi_hiroyasu_navy_chief
 
-activate_mission = foreign_minister_adventures
 ### HTD Start ###
 set_country_flag = HTD_JAP_trm_tankette_tank_chassis_jap_type92_1_a 
 set_country_flag = HTD_JAP_trm_tankette_tank_chassis_jap_type92_1_b 

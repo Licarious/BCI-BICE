@@ -3701,3 +3701,5 @@ HSD_SOV_CL_chapaev_button_effect = {
 		}
 	}
 }
+
+#### AI ONLY (For now) DD/SS ####

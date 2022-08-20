@@ -21,6 +21,7 @@ country_event = { id = blackiceevents.2 days = 1826 } #failsafe for HUN to join 
 country_event = { id = blackiceevents.4 days = 1830 } #failsafe for ROM to join axis
 country_event = { id = germany.280 days = 778 } #280 Replace Goering by Funk
 country_event = { id = germany.300 days = 1978 } #Wilhelm II dies
+country_event = { id = germany.30 days = 761 random_days = 25 } #Focke Wolf Fw-61 flight
 
 news_event = { id = news.2241 days = 670}
 news_event = { id = news.2263 days = 1981 }
@@ -691,7 +692,6 @@ activate_advisor = GER_ludwig_beck_army_chief			#ARMYCOM
 activate_advisor = GER_hermann_goering_air_chief	#AIRCOM
 activate_advisor = GER_erich_raeder_navy_chief			#NAVYCOM
 
-activate_mission = foreign_minister_adventures
 
 add_ideas = {
 	sour_loser

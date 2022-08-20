@@ -56,7 +56,7 @@ set_variable = { oil_target = 320 }
 
 set_variable = { officers_purged_train = 0.35 }
 set_variable = { officers_purged_mobilization = -0.70 }
-set_variable = { officers_purged_command = -0.20 }
+set_variable = { officers_purged_command = -0.22 }
 set_variable = { officers_purged_experience = -0.35 }
 set_variable = { officers_purged_experience_cap = -80 }
 
@@ -547,7 +547,6 @@ activate_advisor = SOV_aleksandr_loktionov_air_chief
 	### Staffers
 activate_advisor = SOV_nikolay_kuznetsov_high_command
 
-activate_mission = foreign_minister_adventures
 
 add_ideas = {
 	

@@ -11,10 +11,7 @@ add_namespace = germany
 		picture = GFX_report_event_scharnhorst_28
 
 		fire_only_once = yes
-		
-		mean_time_to_happen = {
-			days = 2
-		}
+		is_triggered_only = yes
 		
 		option = {
 			name = germany.258.a
@@ -60,7 +57,19 @@ add_namespace = germany
 							custom_slot_6 = empty
 						}
 					}
+				if = {
+					limit = {
+						is_ai = no
+						has_dlc = "Man the Guns"
+					}
 					load_oob = GER_Scharnhorst_Gneisenau_28_NRM
+				}
+				if = {
+					limit = {
+						is_ai = yes
+						has_dlc = "Man the Guns"
+					}
+					load_oob = GER_Scharnhorst_Gneisenau_28_NRM_AI
 				}
 			}
 		}
