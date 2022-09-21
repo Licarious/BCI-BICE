@@ -1778,7 +1778,7 @@ focus_tree = {
 			NOT = { country_exists = SOV }
 		}
 		completion_reward = {
-			add_named_threat = { threat = 1 name = soviet.1.t }
+			add_named_threat = { threat = 1 name = test_the_ussr_focus }
 			add_timed_idea = {
 				idea = JAP_test_soviets
 				days = 75
@@ -3400,7 +3400,26 @@ focus_tree = {
 				bonus = 0.2
 				category = air_doctrine
 			}	
-			
+			random_owned_controlled_state = {
+				prioritize = { 529 848 532 531 }
+				limit = {
+					is_core_of = ROOT
+					NOT = { has_state_category = tiny_island }
+					NOT = { has_state_category = small_island }
+					arms_factory > 1
+					free_building_slots = {
+						building = air_assembly
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = air_assembly
+					level = 1
+					instant_build = yes
+				}
+			}
 			if = {
 				limit = {
 					526 = {
@@ -3791,7 +3810,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+		#will_lead_to_war_with = INS
+		#will_lead_to_war_with = MAL
 
 		completion_reward = {
 			add_ideas = JAP_Kaigun_shinko_doctrine
@@ -6635,9 +6655,14 @@ focus_tree = {
 					}
 				}
 			532 = {		
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_assembly
 						level = 1
 						instant_build = yes
 					}

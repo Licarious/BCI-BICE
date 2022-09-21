@@ -8,6 +8,7 @@ set_war_support = 0.15
 set_country_flag = league_member
 set_country_flag = olympic_attendee
 set_convoys = 25
+country_event = { id = finland.37 days = 183 }
 
 if = {
 	limit = {
@@ -204,29 +205,15 @@ add_ideas = {
 give_military_access = EST
 add_opinion_modifier = { target = SWE modifier = SWE_aland_convention }
 add_manpower = 25000
-set_politics = {
-	ruling_party = liberalism
-	last_election = "1933.7.1"
-	election_frequency = 36
-	elections_allowed = yes
-}
 
-set_popularities = {
-	conservatism = 10.4
-	agrarianism = 22.4
-	fascism = 8.4
-	communism = 0.2
-	neutrality = 2.5
-	monarchism = 0
-	socialism = 38.6
-	liberalism = 17.5
-}
 recruit_character = FIN_vilho_annala
 recruit_character = FIN_vaino_tanner
 recruit_character = FIN_juho_kusti_paasikivi
 recruit_character = FIN_kyosti_kallio
 recruit_character = FIN_aimo_aaltonen
+recruit_character = FIN_toivo_kivimaki
 recruit_character = FIN_aimo_cajander
+recruit_character = FIN_risto_ryti
 recruit_character = FIN_carl_gustaf_mannerheim
 recruit_character = FIN_erik_heinrichs
 recruit_character = FIN_vilho_petter_nenonen
@@ -273,6 +260,23 @@ recruit_character = FIN_vaino_valve
 recruit_character = FIN_jarl_lundqvist
 recruit_character = FIN_olavi_sarko
 recruit_character = FIN_valio_porvari
+set_politics = {
+	ruling_party = liberalism
+	last_election = "1933.7.1"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {
+	conservatism = 10.4
+	agrarianism = 22.4
+	fascism = 8.4
+	communism = 0.2
+	neutrality = 2.5
+	monarchism = 0
+	socialism = 38.6
+	liberalism = 17.5
+}
 
 activate_advisor = FIN_pehr_evind_head_of_state
 ###################################################

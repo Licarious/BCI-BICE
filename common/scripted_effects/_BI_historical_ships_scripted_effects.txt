@@ -3703,3 +3703,307 @@ HSD_SOV_CL_chapaev_button_effect = {
 }
 
 #### AI ONLY (For now) DD/SS ####
+
+#USA
+HSD_USA_DD_benson_button_effect = {
+	create_equipment_variant = {
+		name = "Benson Class"
+		type = nrm_ship_hull_destroyer_2
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_2
+			fixed_ship_engine_slot = nrm_destroyer_engine_S2_050
+			fixed_ship_sonar_slot = nrm_sonar_3
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_5_2_x5
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_4
+			fixed_ship_range_slot = nrm_range_destroyer_3
+			fixed_ship_radar_slot = empty
+			fixed_ship_fire_control_system_slot = nrm_fire_control_5
+			fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+			custom_slot_1 = nrm_support_destroyer_ASW_2
+			custom_slot_2 = nrm_support_destroyer_ASW_2
+			custom_slot_3 = nrm_support_destroyer_TRP_21_C_2_x5
+			custom_slot_4 = nrm_support_destroyer_TRP_21_C_2_x5
+			custom_slot_5 = nrm_support_destroyer_AA_2
+			custom_slot_6 = empty
+		}
+	}
+}
+HSD_USA_DD_fletcher_button_effect = {
+	create_equipment_variant = {
+		name = "Fletcher Class"
+		type = nrm_ship_hull_destroyer_3
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_3
+			fixed_ship_engine_slot = nrm_destroyer_engine_S3_060
+			fixed_ship_sonar_slot = nrm_sonar_4
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_5_2_x5
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_4
+			fixed_ship_range_slot = nrm_range_destroyer_3
+			fixed_ship_radar_slot = nrm_radar_3
+			fixed_ship_fire_control_system_slot = nrm_fire_control_5
+			fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+			custom_slot_1 = nrm_support_destroyer_ASW_3
+			custom_slot_2 = nrm_support_destroyer_ASW_3
+			custom_slot_3 = nrm_support_destroyer_TRP_21_C_2_x5
+			custom_slot_4 = nrm_support_destroyer_TRP_21_C_2_x5
+			custom_slot_5 = nrm_support_destroyer_HAA_2
+			custom_slot_6 = nrm_support_destroyer_AA_3
+		}
+	}
+}
+HSD_USA_DD_gearing_button_effect = {
+	create_equipment_variant = {
+		name = "Gearing Class"
+		type = nrm_ship_hull_destroyer_3
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_3
+			fixed_ship_engine_slot = nrm_destroyer_engine_S3_060
+			fixed_ship_sonar_slot = nrm_sonar_4
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_5_2_x6
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_4
+			fixed_ship_range_slot = nrm_range_destroyer_3h
+			fixed_ship_radar_slot = nrm_radar_fc_4
+			fixed_ship_fire_control_system_slot = nrm_fire_control_6
+			fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_2
+			custom_slot_1 = nrm_support_destroyer_ASW_3
+			custom_slot_2 = nrm_support_destroyer_ASW_3
+			custom_slot_3 = nrm_support_destroyer_TRP_21_C_2_x5
+			custom_slot_4 = nrm_support_destroyer_TRP_21_C_2_x5
+			custom_slot_5 = nrm_support_destroyer_HAA_2
+			custom_slot_6 = nrm_support_destroyer_AA_3
+		}
+	}
+}
+
+#JAP
+HSD_JAP_DD_yugumo_button_effect = {
+	create_equipment_variant = {
+		name = "Yugumo Class"
+		type = nrm_ship_hull_destroyer_2
+		name_group = JAP_DD_HISTORICAL
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_2
+			fixed_ship_engine_slot = nrm_destroyer_engine_S2_055
+			fixed_ship_sonar_slot = nrm_sonar_3
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_5_2_x6
+			fixed_ship_subdivision_slot = nrm_subdivision_3
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+			fixed_ship_range_slot = nrm_range_destroyer_2h
+			fixed_ship_radar_slot = empty
+			fixed_ship_fire_control_system_slot = nrm_fire_control_4
+			fixed_ship_fire_control_system_aa_slot = empty
+			custom_slot_1 = nrm_support_destroyer_ASW_2
+			custom_slot_2 = nrm_support_destroyer_ASW_2
+			custom_slot_3 = nrm_support_destroyer_TRP_24_C_2_x4
+			custom_slot_4 = nrm_support_destroyer_TRP_24_C_2_x4
+			custom_slot_5 = nrm_support_destroyer_AA_2
+			custom_slot_6 = nrm_support_destroyer_AA_2
+		}
+	}
+}
+HSD_JAP_DD_akizuki_button_effect = {
+	create_equipment_variant = {
+		name = "Akizuki Class"
+		type = nrm_ship_hull_destroyer_3
+		name_group = JAP_DD_HISTORICAL
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_3
+			fixed_ship_engine_slot = nrm_destroyer_engine_S2_050
+			fixed_ship_sonar_slot = nrm_sonar_3
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_4_2_x8
+			fixed_ship_subdivision_slot = nrm_subdivision_3
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_3
+			fixed_ship_range_slot = nrm_range_destroyer_4
+			fixed_ship_radar_slot = nrm_radar_2
+			fixed_ship_fire_control_system_slot = nrm_fire_control_5
+			fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_1
+			custom_slot_1 = nrm_support_destroyer_ASW_2
+			custom_slot_2 = nrm_support_destroyer_ASW_2
+			custom_slot_3 = nrm_support_destroyer_AA_2
+			custom_slot_4 = nrm_support_destroyer_TRP_24_C_2_x4
+			custom_slot_5 = nrm_support_destroyer_AA_2
+			custom_slot_6 = nrm_support_destroyer_AA_2
+		}
+	}
+}
+
+
+
+### GENERICS (AI-only)
+
+HSD_GEN_DD_1940_button_effect = {
+	create_equipment_variant = {
+		name = "DD1940 Class"
+		type = nrm_ship_hull_destroyer_3
+		name_group = DD_GENERIC
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_3
+			fixed_ship_engine_slot = nrm_destroyer_engine_S3_055
+			fixed_ship_sonar_slot = nrm_sonar_4
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_5_2_x8
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_4
+			fixed_ship_range_slot = nrm_range_destroyer_2h
+			fixed_ship_radar_slot = nrm_radar_2
+			fixed_ship_fire_control_system_slot = nrm_fire_control_6
+			fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_2
+			custom_slot_1 = nrm_support_destroyer_ASW_3
+			custom_slot_2 = nrm_support_destroyer_ASW_3
+			custom_slot_3 = nrm_support_destroyer_TRP_21_C_2_x4
+			custom_slot_4 = nrm_support_destroyer_TRP_21_C_2_x4
+			custom_slot_5 = nrm_support_destroyer_HAA_2
+			custom_slot_6 = nrm_support_destroyer_AA_3
+		}
+	}
+}
+
+HSD_GEN_DD_1943_button_effect = {
+	create_equipment_variant = {
+		name = "DD1943 Class"
+		type = nrm_ship_hull_destroyer_3
+		#name_group = 
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_3
+			fixed_ship_engine_slot = nrm_destroyer_engine_S3_060
+			fixed_ship_sonar_slot = nrm_sonar_4
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_5_2_x8
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_5
+			fixed_ship_range_slot = nrm_range_destroyer_2h
+			fixed_ship_radar_slot = nrm_radar_fc_4
+			fixed_ship_fire_control_system_slot = nrm_fire_control_7
+			fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_3
+			custom_slot_1 = nrm_support_destroyer_ASW_3
+			custom_slot_2 = nrm_support_destroyer_AA_4
+			custom_slot_3 = nrm_support_destroyer_TRP_21_C_3_x4
+			custom_slot_4 = nrm_support_destroyer_TRP_21_C_3_x4
+			custom_slot_5 = nrm_support_destroyer_HAA_4
+			custom_slot_6 = nrm_support_destroyer_ASWP_1
+		}
+	}
+}
+
+HSD_GEN_DD_1946_button_effect = {
+	create_equipment_variant = {
+		name = "DD1946 Class"
+		type = nrm_ship_hull_destroyer_3
+		#name_group = 
+		parent_version = 0
+		role_icon_index = 39
+		modules = {
+			fixed_ship_hullform_slot = nrm_ship_hullform_destroyer_3
+			fixed_ship_engine_slot = nrm_destroyer_engine_S3_065
+			fixed_ship_sonar_slot = nrm_sonar_5
+			fixed_ship_battery_slot = nrm_destroyer_battery_DP_5_3_x8
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_5
+			fixed_ship_range_slot = nrm_range_destroyer_3
+			fixed_ship_radar_slot = nrm_radar_fc_5
+			fixed_ship_fire_control_system_slot = nrm_fire_control_7
+			fixed_ship_fire_control_system_aa_slot = nrm_fire_control_aa_4
+			custom_slot_1 = nrm_support_destroyer_ASW_3
+			custom_slot_2 = nrm_support_destroyer_AA_4
+			custom_slot_3 = nrm_support_destroyer_TRP_21_C_3_x4
+			custom_slot_4 = nrm_support_destroyer_TRP_21_C_3_x4
+			custom_slot_5 = nrm_support_destroyer_HAA_5
+			custom_slot_6 = nrm_support_destroyer_ASWP_2
+		}
+	}
+}
+HSD_GEN_SS_1941_button_effect = {
+	create_equipment_variant = {
+		name = "SS1941 Class"				
+		type = nrm_ship_hull_submarine_4
+		#name_group = 
+		parent_version = 0
+		role_icon_index = 122
+		modules = {
+			fixed_ship_sub_hull_slot = nrm_submarine_hull_4
+			fixed_ship_engine_slot = nrm_submarine_engine_D2_035
+			fixed_ship_sonar_slot = nrm_submarine_sonar_4
+			fixed_ship_noise_slot = nrm_submarine_noise_2
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_4
+			fixed_ship_range_slot = nrm_range_submarine_2h
+			fixed_ship_radar_slot = nrm_submarine_radar_2
+			fixed_ship_battery_slot = nrm_submarine_deckgun_3
+			fixed_ship_anti_air_slot = nrm_submarine_AA_2
+			fixed_ship_torpedo_slot = nrm_submarine_TRP_21_2_x4
+			fixed_ship_torpedo_2_slot = nrm_submarine_TRP_21_2_x1
+			custom_slot_1 = empty
+			custom_slot_2 = empty
+		}
+	}
+}
+
+HSD_GEN_SS_1944_button_effect = {
+	create_equipment_variant = {
+		name = "SS1944 Class"				
+		type = nrm_ship_hull_submarine_4
+		#name_group = 
+		parent_version = 0
+		role_icon_index = 122
+		modules = {
+			fixed_ship_sub_hull_slot = nrm_submarine_hull_4
+			fixed_ship_engine_slot = nrm_submarine_engine_D3_035
+			fixed_ship_sonar_slot = nrm_submarine_sonar_4
+			fixed_ship_noise_slot = nrm_submarine_noise_3
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_5
+			fixed_ship_range_slot = nrm_range_submarine_2h
+			fixed_ship_radar_slot = nrm_submarine_radar_4
+			fixed_ship_battery_slot = nrm_submarine_deckgun_3
+			fixed_ship_anti_air_slot = nrm_submarine_HAA_2
+			fixed_ship_torpedo_slot = nrm_submarine_TRP_21_2_x4
+			fixed_ship_torpedo_2_slot = nrm_submarine_TRP_21_2_x1
+			custom_slot_1 = nrm_submarine_SNK_1
+			custom_slot_2 = empty
+		}
+	}
+}
+
+HSD_GEN_SS_1946_button_effect = {
+	create_equipment_variant = {
+		name = "SS1946 Class"				
+		type = nrm_ship_hull_submarine_5
+		#name_group = 
+		parent_version = 0
+		role_icon_index = 122
+		modules = {
+			fixed_ship_sub_hull_slot = nrm_submarine_hull_5
+			fixed_ship_engine_slot = nrm_submarine_engine_D3_035
+			fixed_ship_sonar_slot = nrm_submarine_sonar_5
+			fixed_ship_noise_slot = nrm_submarine_noise_3
+			fixed_ship_subdivision_slot = nrm_subdivision_4
+			fixed_ship_damagecontrol_slot = nrm_damagecontrol_5
+			fixed_ship_range_slot = nrm_range_submarine_2h
+			fixed_ship_radar_slot = nrm_submarine_radar_6
+			fixed_ship_battery_slot = empty
+			fixed_ship_anti_air_slot = nrm_submarine_HAA_2
+			fixed_ship_torpedo_slot = nrm_submarine_TRP_21_2_x4
+			fixed_ship_torpedo_2_slot = nrm_submarine_TRP_21_2_x2
+			custom_slot_1 = nrm_submarine_SNK_2
+			custom_slot_2 = empty
+		}
+	}
+}

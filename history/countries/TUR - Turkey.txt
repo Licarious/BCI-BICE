@@ -5,6 +5,8 @@ oob = "TUR_1936"
 set_stability = 0.7
 
 set_war_support = 0.15
+set_fuel_ratio = 0.65
+
 
 set_research_slots = 2
 set_country_flag = league_member
@@ -178,7 +180,7 @@ set_technology = {
 
 add_ideas = { 	
 	export_focus
-	tax_average
+	tax_low
 	tariffs_average
 	mountainous_country
 	
@@ -195,13 +197,14 @@ add_ideas = {
 	officer_train_low
 	age_18
 	security_liberty_first
-	edu_high
+	edu_low
 	foreign_neutral
 	neutrality_idea
 	TUR_Ottoman_Debt
 	TUR_Under_Developed_Army
 	TUR_War_Horrors
 	TUR_Turkish_Military_Staff
+	TUR_literacy
 }
 if = {
 	limit = {
@@ -226,9 +229,9 @@ set_popularities = {
 	socialism = 95
 }
 
+recruit_character = TUR_mustafa_kemal_ataturk
 recruit_character = TUR_rauf_orbay
 recruit_character = TUR_ismet_inonu
-recruit_character = TUR_mustafa_kemal_ataturk
 recruit_character = TUR_resat_fuat_baraner
 recruit_character = TUR_celal_bayar
 recruit_character = TUR_yusuf_hikmet_bayur
@@ -268,8 +271,13 @@ recruit_character = TUR_saffet_arikan
 recruit_character = TUR_ali_tarhan
 recruit_character = TUR_resat_erkmen
 recruit_character = TUR_generic_staunch_traditionalist
+recruit_character = TUR_nuri_demirag
 
 activate_advisor = TUR_mustafa_kemal_ataturk_head_of_state
+set_rule = {
+    can_guarantee_other_ideologies = no
+	can_boost_other_ideologies = no
+}
 ##### Ship Variants ##########################################################
 ##############################################################################
 ## DNM Variants - remember to replace all original naval variants
